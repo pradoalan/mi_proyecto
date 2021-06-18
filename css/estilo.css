@@ -1,0 +1,673 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(80, 80, 80);
+    color: #474b4b;
+    width: 100%;
+}
+
+main{
+    margin: 0 75px;
+}
+
+.encabezado{
+    width: 100%;
+    display: inline;
+}
+/*Empieza el primer contendor redes*/
+.redes{
+    height: 35px;
+    display: flex;
+    background: linear-gradient(to right, black 60%, #457e7e );
+    justify-content: right;
+    align-items: center;
+    transition: height 1s;
+}
+
+.redes:hover{
+    height: 50px;
+    transition: height 1s;
+}
+
+.redes img{
+    width: 27px;
+    display: inline-block;
+    margin: 0 5px;
+    padding-top: 5px;
+    transition: 1s;
+}
+
+.redes img:hover{
+    width: 40px;
+    transition: 1s;
+}
+
+.logo{
+    margin-right: auto;
+    padding-left: 5px;
+    font-size: 20px;
+}
+
+/*Empieza el segundo contenedor que contiene el menu con acceso a las otras paginas*/
+.menu{
+    background-color: black;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 50px;
+    margin-bottom: 10px;
+    position: sticky;
+    top: 0px;
+    transition: height 1s, background-color 2s;
+    z-index: 300;
+}
+.menu:hover{
+    height: 65px;
+    transition: height 1s, background-color 2s;
+    background-color: #000000c9;
+}
+.menu li{
+    list-style-type: none;
+    display: inline-block;
+    font-size: 21px;
+    padding: 10px;
+    margin: 0px 5px;
+    transition: 1s;
+}
+
+.menu li:hover{
+    font-size: 25px;
+    transition: 1s;
+}
+
+a{
+    text-decoration: none;
+    color: #457e7e;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+a:hover{
+    color: rgba(255, 255, 0, 0.637);
+}
+
+.logoMenu img{
+    height: 45px;
+    width: auto;    
+}
+.logoMenu{
+    margin-right: auto;
+    padding: 5px;
+}
+
+/*Propiedades del titulo de la pagina*/
+h1{
+    text-align: right;
+    font-size: 45px;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-decoration: underline;
+}
+
+/*Pagina Musica*/
+#grid1{
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-template-rows: 290px 290px 290px 290px;
+    grid-template-areas: "foto1 foto1 foto2 foto3"
+                         "foto1 foto1 foto4 foto4"
+                         "foto5 foto6 foto4 foto4"
+                         "foto7 foto7 foto8 foto9"   
+    ;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
+}
+
+#mus1{
+    grid-area: foto1;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#mus2{
+    grid-area: foto2;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+
+}
+
+#mus3{
+    grid-area: foto3;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#mus4{
+    grid-area: foto4;   
+    position: relative;
+    display: inline-block;
+    text-align: center;
+
+}
+
+#mus5{
+    grid-area: foto5;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#mus6{
+    grid-area: foto6;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#mus7{
+    grid-area: foto7;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#mus8{
+    grid-area: foto8;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#mus9{
+    grid-area: foto9;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#grid1 img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.texto{
+    position: absolute;
+    bottom: 0px;
+    color: rgb(228, 228, 228);
+    background-color: rgba(17, 17, 17, 0.445);              /*MOVER ABAJO, TEXTO PARA TODAS LAS PAGINAS*/
+    font-family: 'Pontano Sans', sans-serif;
+    font-size: 13px;
+}
+
+/*Pagina Cine*/
+#grid2{
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-template-rows: 290px 290px 290px 290px;
+    grid-template-areas: "foto1 foto2 foto3 foto3"
+                         "foto6 foto6 foto3 foto3"
+                         "foto6 foto6 foto7 foto7"
+                         "foto4 foto5 foto8 foto9"
+    ;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
+}
+
+#cine1{
+    grid-area: foto1;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#cine2{
+    grid-area: foto2;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#cine3{
+    grid-area: foto3;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#cine4{
+    grid-area: foto4;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#cine5{
+    grid-area: foto5;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#cine6{
+    grid-area: foto6;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#cine7{
+    grid-area: foto7;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#cine8{
+    grid-area: foto8;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#cine9{
+    grid-area: foto9;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#grid2 img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+/*Pagina Series*/
+#grid3{
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-template-rows: 290px 290px 290px 290px;
+    grid-template-areas: "foto1 foto1 foto2 foto3"
+                         "foto4 foto5 foto6 foto6"
+                         "foto7 foto7 foto6 foto6"
+                         "foto7 foto7 foto8 foto9"
+    ;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
+}
+
+#series1{
+    grid-area: foto1;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#series2{
+    grid-area: foto2;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#series3{
+    grid-area: foto3;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#series4{
+    grid-area: foto4;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#series5{
+    grid-area: foto5;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#series6{
+    grid-area: foto6;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#series7{
+    grid-area: foto7;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#series8{
+    grid-area: foto8;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#series9{
+    grid-area: foto9;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#grid3 img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+/*Pagina Literatura*/
+#grid4{
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-template-rows: 290px 290px 290px 290px;
+    grid-template-areas: "foto1 foto6 foto6 foto4"
+                         "foto5 foto5 foto2 foto3"
+                         "foto5 foto5 foto7 foto7"
+                         "foto8 foto9 foto7 foto7"
+    ;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
+}
+
+#lit1{
+    grid-area: foto1;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#lit2{
+    grid-area: foto2;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#lit3{
+    grid-area: foto3;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#lit4{
+    grid-area: foto4;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#lit5{
+    grid-area: foto5;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#lit6{
+    grid-area: foto6;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#lit7{
+    grid-area: foto7;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#lit8{
+    grid-area: foto8;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#lit9{
+    grid-area: foto9;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#grid4 img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+/*Pagina Entretenimiento*/
+#grid5{
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-template-rows: 290px 290px 290px 290px;
+    grid-template-areas: "foto1 foto2 foto3 foto3"
+                         "foto4 foto4 foto3 foto3"
+                         "foto4 foto4 foto5 foto6"
+                         "foto7 foto8 foto9 foto9"
+    ;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
+}
+
+#ent1{
+    grid-area: foto1;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#ent2{
+    grid-area: foto2;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#ent3{
+    grid-area: foto3;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#ent4{
+    grid-area: foto4;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#ent5{
+    grid-area: foto5;
+    position: relative;
+    display: inline-block;
+    text-align: center
+}
+
+#ent6{
+    grid-area: foto6;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#ent7{
+    grid-area: foto7;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#ent8{
+    grid-area: foto8;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#ent9{
+    grid-area: foto9;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#grid5 img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+/*pagina lifestyle*/
+#grid6{
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-template-rows: 290px 290px 290px 290px;
+    grid-template-areas: "foto1 foto2 foto3 foto3"
+                         "foto4 foto4 foto5 foto6"
+                         "foto4 foto4 foto7 foto7"
+                         "foto8 foto9 foto7 foto7"
+    ;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
+}
+
+#life1{
+    grid-area: foto1;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#life2{
+    grid-area: foto2;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#life3{
+    grid-area: foto3;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#life4{
+    grid-area: foto4;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#life5{
+    grid-area: foto5;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#life6{
+    grid-area: foto6;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#life7{
+    grid-area: foto7;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#life8{
+    grid-area: foto8;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#life9{
+    grid-area: foto9;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#grid6 img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+/*Propiedades del footer aplicando flex*/
+.pie{
+    color: #457e7e;
+    background-color: black;
+    display: flex;
+    height: 120px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.pie h3{
+    margin: 0;
+    font-size: 35px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.pie p{
+    margin-top: 5px;
+    font-size: 15px;
+    font-family: 'Pontano Sans', sans-serif;
+}
+
+.pie button{
+    cursor: pointer;  
+    color: rgba(245, 245, 245, 0.808); 
+    background-color: #457e7e; 
+    border-radius: 80px; 
+    border: none; 
+    font-weight: bold; 
+    font-size: 17px; 
+    letter-spacing: 2px;
+    padding: 10px;
+    margin: 0 3px;
+}
+
+.boton{
+    display: flex;
+    margin-top: 15px;
+}
