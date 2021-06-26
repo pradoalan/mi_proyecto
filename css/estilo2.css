@@ -4,8 +4,7 @@
 }
 
 body{
-    background-color: rgb(80, 80, 80);
-    color: #000000;
+    background-color: #0f0f0f;
     width: 100%;
 }
 
@@ -20,17 +19,11 @@ main{
 
 /*Empieza el primer contendor redes*/
 .redes{
-    height: 35px;
+    height: 45px;
     display: flex;
-    background: linear-gradient(to right, black 60%, #457e7e );
+    background: linear-gradient(to right, black 60%,   #457e53 );
     justify-content: right;
     align-items: center;
-    transition: height 1s;
-}
-
-.redes:hover{
-    height: 50px;
-    transition: height 1s;
 }
 
 .redes img{
@@ -48,18 +41,23 @@ main{
 
 .redes a{
     text-decoration: none;
-    color: #457e7e;
-    font-family: 'Open Sans Condensed', sans-serif;
-}
-
-.redes a:hover{
-    color: rgba(255, 255, 0, 0.637);
+    color:  #949280;
+    font-family: 'Orbitron', sans-serif;
 }
 
 .logo{
     margin-right: auto;
-    padding-left: 5px;
-    font-size: 20px;
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.logo p{
+    margin-bottom: 0px;
+}
+
+.logoRedes img{
+    padding: 0px;
+    margin: 0px 3px;
 }
 
 /*Empieza el segundo contenedor que contiene el menu con acceso a las otras paginas*/
@@ -68,74 +66,81 @@ main{
     display: flex;
     justify-content: right;
     align-items: center;
-    height: 50px;
+    height: 65px;
     margin-bottom: 10px;
     position: sticky;
     top: 0px;
-    transition: height 1s, background-color 2s;
+    transition: background-color 2s;
     z-index: 300;
 }
 .menu:hover{
-    height: 65px;
-    transition: height 1s, background-color 2s;
+    transition: background-color 2s;
     background-color: #000000c9;
 }
-.menu li{
+
+.navegacion ul{
+    margin-bottom: 0px;
+}
+
+.navegacion li{
     list-style-type: none;
     display: inline-block;
-    font-size: 21px;
-    padding: 10px;
+    font-size: 17px;
+    padding: 5px;
     margin: 0px 5px;
     transition: 1s;
 }
 
-.menu li:hover{
-    font-size: 25px;
+.navegacion li:hover{
+    font-size: 22px;
     transition: 1s;
 }
 
-.menu li a{
+.navegacion li a{
     text-decoration: none;
-    color: #457e7e;
-    font-family: 'Open Sans Condensed', sans-serif;
+    color: #967882;
+    font-family: 'Orbitron', sans-serif;
 }
 
-.menu li a:hover{
-    color: rgba(255, 255, 0, 0.637);
+.navegacion li a:hover{
+    color: rgba(255, 255, 101, 0.637);
 }
 
 .logoMenu img{
-    height: 45px;
+    height: 100px;
     width: auto;    
 }
 .logoMenu{
     margin-right: auto;
     padding: 5px;
+    margin-left: 50px;
 }
 
 /*Propiedades del titulo de la pagina*/
 h1{
     margin: 0px 0px;
     font-size: 45px;
-    color: black;
-    text-decoration: underline;
-    font-family: 'Oswald', sans-serif;
-    margin-right: 10px;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    color:  #949280;
+    font-family: 'Orbitron', sans-serif;
+    margin: 40px 20px 40px 20px;
+    text-align: center;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
     text-align: right;
+
+
+
 }
 
 a{
     text-decoration: none;
-    color: black;
 }
 
 /*grid de la pagina index*/
 #grid{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 350px 350px 350px;
+    grid-template-rows: 580px 580px 580px;
     grid-template-areas: "area1 area2"
                          "area3 area4"
                          "area5 area6"
@@ -149,21 +154,26 @@ a{
 
 #texto1{
     grid-area: area2;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 25px;
-    text-decoration: none;
-    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
     margin-left: 15px;
     align-self: center;
-    border-top: 3px solid black;
 
+}
+
+#texto1 h2{
+   color: #967882 ;
+   border-top: 3px solid black;
+   border-bottom: 3px solid black;
+   text-align: justify;
 }
 
 #texto1 p{
 
     font-size: 16px;
-    font-family: 'Pontano Sans', sans-serif;
-    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 40px;
+    color:  #949280;
 }
 
 #noticia2{
@@ -172,21 +182,26 @@ a{
 
 #texto2{
     grid-area: area3;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 25px;
-    text-decoration: none;
-    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
     margin-right: 15px;
     align-self: center;
-    border-top: 3px solid black;
 
 }
+
+#texto2 h2{
+    color: #967882;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    text-align: justify;
+ }
 
 #texto2 p{
 
     font-size: 16px;
-    font-family: 'Pontano Sans', sans-serif;
-    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 40px;
+    color: #949280;
 }
 
 #noticia3{
@@ -195,19 +210,24 @@ a{
 
 #texto3{
     grid-area: area6;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 25px;
-    text-decoration: none;
-    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
     margin-left: 15px;
     align-self: center;
-    border-top: 3px solid black;
 }
+
+#texto3 h2{
+    color: #967882;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    text-align: justify;
+ }
 
 #texto3 p{
     font-size: 16px;
-    font-family: 'Pontano Sans', sans-serif;
-    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 40px;
+    color: #949280;
 }
 
 #grid img{
@@ -220,39 +240,91 @@ a{
 .grid2{
     display: grid;
     grid-template-columns: 64% 23%;
-    grid-template-rows: 600px 1700px;
-    grid-template-areas: "area1 area3"
+    grid-template-rows: 900px 600px 1250px;
+    grid-template-areas: "area0 area0"
+                         "area1 area2"
                          "area1 area2"
     ;
     column-gap: 150px;
-    row-gap: 70px;
+    row-gap: 80px;
+    margin-top: 30px;
+    margin-bottom: 70px;
 }
+
+/*Portada*/
+
+.portada{
+    grid-area: area0;
+}
+
+.portada h2{
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #967882;
+}
+
+.portada h3{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #949280;
+    margin-bottom: 10px;
+
+}
+
+.portada p{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: #949280;
+    margin-bottom: 3px;
+}
+
+.portada p span{
+    color: #3f6153;
+}
+
+/*Noticia principal*/
 
 .noticia{
     grid-area: area1;
 }
 
-.contenido{
+.noticia h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    text-align: left;
+    margin: 10px 0px;
+    color: #967882;
+}
+
+.noticia p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color:  #949280;
+}
+
+/*Aside publicitario*/
+
+.ads{
     grid-area: area2;
 }
 
-.ads{
-    grid-area: area3;
+.publicidad{
+    position: sticky;
+    top: 85px;
 }
 
 .noticia img{
     max-width: 100%;
     width: 100%;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
 
 }
-
-.contenido img{
-    max-width: 100%;
-    width: 100%;
-    height: 200px;
-}
-
 
 .ads img{
     max-width: 100%;
@@ -260,30 +332,39 @@ a{
     
 }
 
-.grid2 h2{
-        font-family: 'Barlow Condensed', sans-serif;
-        font-size: 50px;
+/*Carousel con mas contenido del sitio*/
 
-}
-
-.grid2 p{
-    font-family: 'Pontano Sans', sans-serif;
-    font-size: 18px;
-
-    margin: 18px 0;
-}
-
-.contenido h2{
+.carouselContenido{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
     text-align: center;
-    font-size: 45px;
-    text-decoration: underline;
+    margin: 10px 0px;
+    color: #967882;
 }
 
-.contenido p{
+.carousel{
+    width: 300px;
+    height: 300px;
+    margin: 20px auto 50px;
+    z-index: -1;
+}
+
+.carousel p{
+    position: absolute;
+    bottom: 0px;
+    color: rgb(228, 228, 228);
+    background-color: rgba(17, 17, 17, 0.61);
     font-family: 'Pontano Sans', sans-serif;
-    font-size: 15px;
-
+    font-size: 20px;
+    font-weight: bold;
 }
+
+.carousel-caption {
+    max-width: 100%;
+    width:100%;
+    left: 0;
+}
+
 
 /*propiedades de las paginas del footer*/
 .contacto{
@@ -325,33 +406,39 @@ textarea{
 
 /*Propiedades del footer aplicando flex*/
 .pie{
-    color: #457e7e;
+    color:  #3f6153;
     background-color: black;
     display: flex;
-    height: 120px;
+    height: 200px;
     padding: 20px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .pie h3{
     margin: 0;
-    font-size: 35px;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 30px;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
 }
 
 .pie p{
     margin-top: 5px;
     font-size: 15px;
-    font-family: 'Pontano Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
+.btn{
+    font-family: 'Orbitron', sans-serif;
+}
+/*
 .pie button{
     cursor: pointer;  
     color: rgba(245, 245, 245, 0.808); 
-    background-color: #457e7e; 
+    background-color:  #3f6153; 
     border-radius: 80px; 
     border: none; 
     font-weight: bold; 
@@ -359,9 +446,198 @@ textarea{
     letter-spacing: 2px;
     padding: 10px;
     margin: 0 3px;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.boton{
+.button{
     display: flex;
     margin-top: 15px;
 }
+*/
+
+.dropdown{
+    visibility: hidden;
+}
+
+
+/*Media queries*/
+
+@media only screen and (max-width: 1200px){
+    main{
+        margin: 0px;
+    }
+
+    .grid2 h2{
+        margin: 10px 5px;
+    }
+
+    .grid2 p{
+        margin: 0px 5px;
+    }
+
+
+}
+
+@media only screen and (max-width: 992px){
+
+    /*Barra de navegacion*/
+
+    .menu a{
+        font-size: 12px;
+    }
+
+    /*Contenido de la pagina*/
+
+    .grid2{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 800px 2000px 400px;
+        grid-template-areas: "area0"
+                             "area1"
+                             "area2"
+        ;
+        row-gap: 0px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+
+    .grid2 p{
+        margin: 0px 5px;
+    }
+
+    .ads{
+        align-self: center;
+        justify-self: center;
+    }
+
+    .ads p{
+        margin: auto;
+    }
+
+    .ads img{
+        width: 250px;
+
+    }
+
+    .publicidad{
+        position: static;
+        display: flex;
+    }
+
+}
+
+@media only screen and (max-width: 768px){   
+
+    /*Atributos primer contenedor para logo y redes*/
+
+    .redes{
+        background: linear-gradient(to top, black 50%,   #457e53 );
+    }
+
+    .logo{
+
+        margin: auto;
+        font-size: 20px;
+
+    }
+
+    .logoRedes{
+        display: none;
+    }
+
+    /*Atributos del contenedor menu*/
+
+    .logoMenu{
+        margin-left: 5px;
+    }
+
+    .navegacion{
+        display: none;
+    }
+    
+    .dropdown{
+        visibility: visible;
+        justify-self: right;       
+        margin-right: 10px;
+        font-family: 'Orbitron', sans-serif;
+        
+    }
+
+    #dropdownMenuButton1{
+        width: 190px;
+        color:  #949280;
+    }
+
+    .dropdown-menu{
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        min-width: 190px;
+    }
+
+    .menu ul li a {
+        font-size: 15px;
+        padding: 8px 0px;
+    }
+
+    .menu ul li a img{
+        width: 30px;
+    }
+
+    /*contenido principal pagina*/
+
+    h1{
+        font-size: 40px;
+        text-align: center;
+        color: #967882;
+    }
+
+    .grid2{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 750px 1900px 400px;
+        grid-template-areas: "area0"
+                             "area1"
+                             "area2"
+        ;
+        row-gap: 0px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+
+    /*Contenido del footer*/
+
+    .pie{
+        height: 400px;
+    }
+
+}
+
+@media only screen and (max-width: 576px){
+
+    .grid2{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 650px 2100px 350px;
+        grid-template-areas: "area0"
+                             "area1"
+                             "area2"
+        ;
+        row-gap: 0px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+
+    .publicidad{
+        display: block;
+        margin: 50px 0px;
+    }
+
+    .ads img{
+        width: 130px;
+    }
+
+
+
+
+}
+

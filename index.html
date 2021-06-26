@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilo2.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Open+Sans+Condensed:wght@300&family=Oswald:wght@300&family=Pontano+Sans&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Orbitron:wght@500&family=Oswald&display=swap" rel="stylesheet">  
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -20,24 +22,27 @@
 
             <div class="logo">
                 <a href="../index.html">
-                    <p class="animate__animated animate__fadeIn">EL RINCON DEL AISLAMIENTO</p>
+                    <p class="animate__animated animate__fadeIn">ESTACION CULTURAL</p>
             </div>
         
+            <div class="logoRedes">
             <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.svg" alt="facebook"></a>
             <a href="https://twitter.com/?lang=es" target="_blank"><img src="img/gorjeo.svg" alt="twitter"></a>
             <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.svg" alt="instagram"></a>
             <a href="https://www.youtube.com/" target="_blank"><img src="img/youtube.svg" alt="youtube"></a>
+            </div>
 
         </div>   
-        <!--Empieza el contendero para el menu con el logo 2-->
+        <!--Empieza el contenedor para el menu con el logo 2-->
         <nav class="menu">
 
             <div class="logoMenu">
                 <a href="index.html">
-                <img class="animate__animated animate__fadeIn" src="img/logo(3).png" alt="logo">
+                <img class="animate__animated animate__fadeIn" src="img/logoFinal.png" alt="logo">
                 </a>
             </div>
 
+            <div class="navegacion">
             <ul>
                 <li><a href="index.html">Inicio</a>
                 </li>
@@ -60,11 +65,12 @@
                     <a href="pages/lifestyle.html">Lifestyle</a>
                 </li>
             </ul>
+            </div>
             
         </nav>        
         
         <!--Titulo principal del sitio web-->
-        <h1 class="animate__animated animate__fadeInRight" >
+        <h1 class="animate__animated animate__fadeIn">
             CULTURA GENERAL
         </h1>
  
@@ -76,12 +82,13 @@
         <section id= grid>
             <div id="noticia1">
                 <a href="articles/article2.html">
-                    <img src="img/soundofmetal2.png" alt="Sound Of Metal">
+                    <img src="img/soundOfMetal.jpg" alt="Sound Of Metal">
                 </a>
             </div>
 
             
             <div id="texto1">
+                
                 <a href="articles/article2.html">
                 <h2>Sound Of Metal, como aceptar una perdida y encontrar la paz interior</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, error ex nobis, ea aliquid neque a atque facilis minus tempore ad repudiandae beatae enim ullam mollitia dicta perspiciatis quo in! <br>
@@ -91,14 +98,14 @@
                       
             <div id="noticia2">
                 <a href="articles/article1.html">
-                    <img src="img/gaimanAmericanGods.webp" alt="American Gods">
+                    <img src="img/murakam.jpg" alt="Haruki Murakami">
                 </a>
             </div>
             
             
             <div id="texto2">
                 <a href="articles/article1.html">
-                <h2>American Gods, destino y tormenta de la mano de Neil Gaiman</h2>
+                <h2>Haruki Murakami: Realismo literario en el magico Japon</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum quisquam nam totam magni aliquam veritatis corporis tenetur neque soluta, maiores dolor molestiae itaque consequuntur officiis temporibus inventore adipisci. Ea, sunt. <br>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae delectus commodi, repellat hic tenetur voluptas, excepturi a molestiae quo debitis aut reiciendis soluta quia quos qui iure non at? Sint!</p>
                 </a>
@@ -107,13 +114,13 @@
 
             <div id="noticia3">
                 <a href="articles/article3.html">
-                    <img src="img/narcosMexico2.jpg" alt="Narcos Mexico">
+                    <img src="img/Moschino.png" alt="Moschino">
                 </a>
             </div>
 
             <div id="texto3">
                 <a href="articles/article3.html">
-                <h2>El principio (pero no el fin) de la guerra contra las drogas, Narcos-Mexico</h2>
+                <h2>En plena pandemia mundial la marca Moschino nos enseña a superar las adversidades con creatividad</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit facere minima quisquam quam rem sint? Natus quos nisi, ipsam maiores, aperiam neque non modi laborum quae voluptas quidem sint quaerat. <br>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur commodi consectetur doloremque nostrum accusamus quas, veritatis perspiciatis possimus tempore facere quia eum consequatur repellat, a impedit ad ducimus facilis fugit.</p>
                 </a>
@@ -131,10 +138,13 @@
             Podes llenar el siguiente formulario de contacto para poder estar al tanto del mundo de la cultura y no perderte ninguna noticia!
         </p>
         <div class="boton">
-        <a href="pages/contacto.html"><button>CONTACTO</button></a>
-        <a href="pages/sobreMi.html"><button id="about">SOBRE NOSOTROS</button></a>
+        <a href="pages/contacto.html"><button type="button" class="btn btn-outline-success">CONTACTO</button></a>
+        <a href="pages/sobreMi.html"><button type="button" class="btn btn-outline-success">SOBRE NOSOTROS</button></a>
+
         </div>
-    </footer>  
+    </footer> 
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
 </html>
