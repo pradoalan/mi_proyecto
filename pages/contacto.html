@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/estilo2.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Open+Sans+Condensed:wght@300&family=Oswald:wght@300&family=Pontano+Sans&display=swap" rel="stylesheet"> 
+    <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Orbitron:wght@500&family=Pontano+Sans&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -20,52 +23,82 @@
 
             <div class="logo">
                 <a href="../index.html">
-                    <p class="animate__animated animate__fadeIn">EL RINCON DEL AISLAMIENTO</p>
+                    <p class="animate__animated animate__fadeIn">ESTACION CULTURAL</p>
             </div>
         
+            <div class="logoRedes">
             <a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.svg" alt="facebook"></a>
             <a href="https://twitter.com/?lang=es" target="_blank"><img src="../img/gorjeo.svg" alt="twitter"></a>
             <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.svg" alt="instagram"></a>
             <a href="https://www.youtube.com/" target="_blank"><img src="../img/youtube.svg" alt="youtube"></a>
+            </div>
 
         </div>   
-        <!--Empieza el contendero para el menu con el logo 2-->
+        <!--Empieza el contenedor para el menu con el logo 2-->
         <nav class="menu">
 
             <div class="logoMenu">
                 <a href="../index.html">
-                <img class="animate__animated animate__fadeIn" src="../img/logo(3).png" alt="logo">
+                <img class="animate__animated animate__fadeIn" src="../img/logoFinal.png" alt="logo">
                 </a>
             </div>
 
+        <!--Se agrego un boton dropdown para resoluciones mas pequeñas que se mantiene escondido con visibility:hidden-->
+        
+        <div class="dropdown">
+            <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              MENU
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="../pages/cine.html">CINE</a></li>
+              <li><a class="dropdown-item" href="../pages/series.html">SERIES</a></li>
+              <li><a class="dropdown-item" href="../pages/literatura.html">LITERATURA</a></li>
+              <li><a class="dropdown-item" href="../pages/entretenimiento.html">ENTRETENIMIENTO</a></li>
+              <li><a class="dropdown-item" href="../pages/musica.html">MUSICA</a></li>
+              <li><a class="dropdown-item" href="../pages/lifestyle.html">LIFESTYLE</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><h6 class="dropdown-header">Redes</h6></li>
+              <li><a class="dropdown-item" href="https://www.facebook.com/" target="blank"><img src="../img/facebook.svg" alt=""></a></li>
+              <li><a class="dropdown-item" href="https://twitter.com/?lang=es" target="blank"><img src="../img/gorjeo.svg" alt=""></a></li>
+              <li><a class="dropdown-item" href="https://www.instagram.com/" target="blank"><img src="../img/instagram.svg" alt=""></a></li>
+              <li><a class="dropdown-item" href="https://www.youtube.com/" target="blank"><img src="../img/youtube.svg" alt=""></a></li>
+            </ul>
+          </div>
+                         
+        <!--Menu de navegacion con las paginas del sitio, se oculta en resoluciones mas pequeñas con display:none-->
+
+            <div class="navegacion">
             <ul>
                 <li><a href="../index.html">Inicio</a>
                 </li>
                 <li>
-                    <a href="../pages/cine.html">Cine</a>
+                    <a href="cine.html">Cine</a>
                 </li>
                 <li>
-                    <a href="../pages/series.html">Series</a>
+                    <a href="series.html">Series</a>
                 </li>
                 <li>
-                    <a href="../pages/literatura.html">Literatura</a>
+                    <a href="literatura.html">Literatura</a>
                 </li>
                 <li>
-                    <a href="../pages/entretenimiento.html">Entretenimiento</a>
+                    <a href="entretenimiento.html">Entretenimiento</a>
                 </li>
                 <li>
-                    <a href="../pages/musica.html">Musica</a>
+                    <a href="musica.html">Musica</a>
                 </li>
                 <li>
-                    <a href="../pages/lifestyle.html">Lifestyle</a>
+                    <a href="lifestyle.html">Lifestyle</a>
                 </li>
             </ul>
-
-        </nav>
-
-        <!--Titulo de la seccion del sitio-->
-        <h1 class="animate__animated animate__fadeInLeftBig">CONTACTO</h1>
-
+            </div>
+            
+        </nav>        
+        
+        <!--Titulo principal del sitio web-->
+        <h1 class="animate__animated animate__fadeInLeft">
+            CONTACTO
+        </h1>
+ 
     </header>
 
     <main>
@@ -115,9 +148,12 @@
             Podes llenar el siguiente formulario de contacto para poder estar al tanto del mundo de la cultura y no perderte ninguna noticia!
         </p>
         <div class="boton">
-        <a href="contacto.html"><button>CONTACTO</button></a>
-        <a href="sobreMi.html"><button id="about">SOBRE NOSOTROS</button></a>
-        </div>
-    </footer>  
+            <a href="contacto.html"><button type="button" class="btn btn-outline-success">CONTACTO</button></a>
+            <a href="sobreMi.html"><button type="button" class="btn btn-outline-success">SOBRE NOSOTROS</button></a>
+    
+            </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

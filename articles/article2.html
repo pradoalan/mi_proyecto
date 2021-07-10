@@ -7,8 +7,9 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilo2.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Open+Sans+Condensed:wght@300&family=Oswald:wght@300&family=Pontano+Sans&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Orbitron:wght@500&family=Pontano+Sans&display=swap" rel="stylesheet">  
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -21,24 +22,53 @@
 
             <div class="logo">
                 <a href="../index.html">
-                    <p class="animate__animated animate__fadeIn">EL RINCON DEL AISLAMIENTO</p>
+                    <p class="animate__animated animate__fadeIn">ESTACION CULTURAL</p>
             </div>
         
+            <!--Las redes sociales desaparecen con resoluciones mas pequeñas con el atributo display:none-->
+
+            <div class="logoRedes">
             <a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.svg" alt="facebook"></a>
             <a href="https://twitter.com/?lang=es" target="_blank"><img src="../img/gorjeo.svg" alt="twitter"></a>
             <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.svg" alt="instagram"></a>
             <a href="https://www.youtube.com/" target="_blank"><img src="../img/youtube.svg" alt="youtube"></a>
+            </div>
 
         </div>   
-        <!--Empieza el contendero para el menu con el logo 2-->
+        <!--Empieza el contenedor para el menu con el logo 2-->
         <nav class="menu">
 
             <div class="logoMenu">
                 <a href="../index.html">
-                <img class="animate__animated animate__fadeIn" src="../img/logo(3).png" alt="logo">
+                <img class="animate__animated animate__fadeIn" src="../img/logoFinal.png" alt="logo">
                 </a>
             </div>
 
+        <!--Se agrego un boton dropdown para resoluciones mas pequeñas que se mantiene escondido con visibility:hidden-->
+        
+            <div class="dropdown">
+                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  MENU
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="../pages/cine.html">CINE</a></li>
+                  <li><a class="dropdown-item" href="../pages/series.html">SERIES</a></li>
+                  <li><a class="dropdown-item" href="../pages/literatura.html">LITERATURA</a></li>
+                  <li><a class="dropdown-item" href="../pages/entretenimiento.html">ENTRETENIMIENTO</a></li>
+                  <li><a class="dropdown-item" href="../pages/musica.html">MUSICA</a></li>
+                  <li><a class="dropdown-item" href="../pages/lifestyle.html">LIFESTYLE</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><h6 class="dropdown-header">Redes</h6></li>
+                  <li><a class="dropdown-item" href="https://www.facebook.com/" target="blank"><img src="../img/facebook.svg" alt=""></a></li>
+                  <li><a class="dropdown-item" href="https://twitter.com/?lang=es" target="blank"><img src="../img/gorjeo.svg" alt=""></a></li>
+                  <li><a class="dropdown-item" href="https://www.instagram.com/" target="blank"><img src="../img/instagram.svg" alt=""></a></li>
+                  <li><a class="dropdown-item" href="https://www.youtube.com/" target="blank"><img src="../img/youtube.svg" alt=""></a></li>
+                </ul>
+              </div>
+              
+            <!--Menu de navegacion con las paginas del sitio, se oculta en resoluciones mas pequeñas con display:none-->
+
+            <div class="navegacion">
             <ul>
                 <li><a href="../index.html">Inicio</a>
                 </li>
@@ -61,68 +91,114 @@
                     <a href="../pages/lifestyle.html">Lifestyle</a>
                 </li>
             </ul>
-            
-        </nav>    
+            </div>
 
+        </nav>    
+        
         <!--Titulo de la seccion a la que pertenece la pagina-->
-         <h1 class="animate__animated animate__fadeInRight" >
+         <h1 class="animate__animated animate__fadeIn">
             CINE
         </h1>
 
     </header>
 
     <main>
+    <!--Comienza el grid con la noticia principal-->
+    <div class="grid2">
 
-        <!--Comienza el grid con la noticia principal-->
-        <div class="grid2">
+        <div class="portada">
+            <img style="width: 100%;" src="../img/soundOfPortada.jpg" alt="sound of metal">
+            <h2>La fragilidad de los sentidos</h2>
+            <h3>La excelentisima Sound of Metal nos enseña a apreciar el presente</h3>
+            <p>Por <span>Alan Nicolas Prado</span></p>
+            <p><span>08/07/2021</span></p>
+        </div>
+
         <section class="noticia">
-            <img  src="../img/Sound-of-Metal-portada.jpg" alt="sound of metal">
-            
-            <h2>
-                SUBTITULO
-            </h2>
+
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, modi reprehenderit pariatur a quam error, laboriosam nostrum numquam rem illo assumenda quia, nam provident? Delectus dolor nesciunt ad quam natus! <br>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate animi repellat nostrum aliquid facere? Asperiores in velit, dolor, consequuntur laudantium veritatis fugit rerum nam sapiente accusamus ullam, libero voluptates omnis! <br><br>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, esse placeat libero aliquam provident doloremque, deleniti delectus eum eligendi architecto, laborum eveniet? Id quia ipsam, commodi expedita cumque fugit. Esse.
             </p>
-            <img src="../img/Sound-of-metal-Ahmed-03.webp" alt="riz ahmed">
+            <img src="../img/american-gods-book-cover-feature-470x248-1280x720.png" alt="american gods">
             <h2>
-                SUBTITULO 
+                Subtitulo 
             </h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quasi ipsam modi accusantium, aspernatur nesciunt praesentium porro rerum doloremque provident quis pariatur nam voluptates exercitationem eveniet esse, ducimus eius inventore. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, iure praesentium libero dolor a rerum, molestiae, ex aperiam repudiandae excepturi architecto hic esse temporibus quia asperiores quo eaque repellendus suscipit!
             </p>
-            <img src="../img/soundofmetal2.png" alt="sound of metal">
+            <img src="../img/american-gods-book-cover-feature-470x248-1280x720.png" alt="american gods">
             <h2>
-                SUBTITULO
+                Subtitulo
             </h2>
             <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis labore vel impedit quam itaque aliquid tenetur reprehenderit incidunt minima! Debitis deleniti ipsam cupiditate sequi molestias maxime atque quibusdam nulla corrupti. <br> <br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus magnam dolorum dicta dignissimos soluta ipsum, debitis delectus vel expedita magni sit ut impedit! Necessitatibus possimus quibusdam perspiciatis porro, officia ipsum.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus magnam dolorum dicta dignissimos soluta ipsum, debitis delectus vel expedita magni sit ut impedit! Necessitatibus possimus quibusdam perspiciatis porro, officia ipsum. <br> <br>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos explicabo praesentium neque numquam vero voluptatibus cum! Magnam ab ratione excepturi iusto molestias voluptatibus adipisci quas laborum magni atque, quidem itaque! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat minima, adipisci iusto deserunt at minus ut. Facilis voluptas consequuntur maxime sit quas nostrum voluptatibus, earum molestias nemo, quibusdam veritatis minus. <br> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur laborum maxime, eveniet in dolor numquam porro! Placeat iure, aut voluptate labore numquam deserunt error suscipit eum, aliquid repudiandae, corporis corrupti!
             </p>
         </section>
 
         <!--Aside dedicado a publicidad-->
         <aside class="ads">
+            <div class="publicidad">
             <img src="../img/banner.png" alt="Ad">
             <p style="text-align: center;">ESPACIO PARA PUBLICIDAD</p>
             <img src="../img/banner2.jpg" alt="Ad2">
+            </div>
         </aside>
 
-        <!--Seccion con mas contenido del sitio-->
-        <section class="contenido">
-            <h2>MAS CONTENIDO</h2>
-            <a href="article3.html"><p><img src="../img/narcos2.jpg" alt="">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure autem illum placeat eius, reiciendis repudiandae iusto ipsam dolorum praesentium consequatur vel molestiae deleniti voluptate, ut est illo doloribus recusandae quam?</p></a>
-            <a href="article1.html"><p><img src="../img/american-gods-cover.png" alt="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum illo ea nihil quos maxime deleniti, sequi voluptates rem tempore facere! Voluptatum nobis expedita mollitia itaque maiores sed at veritatis error!</p></a>
-            <a href="article2.html"><p><img src="../img/Sound-of-metal-Ahmed-03.webp" alt="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum illo ea nihil quos maxime deleniti, sequi voluptates rem tempore facere! Voluptatum nobis expedita mollitia itaque maiores sed at veritatis error!</p></a>
-            <p><img src="../img/imagenPendiente.jpg" alt="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum illo ea nihil quos maxime deleniti, sequi voluptates rem tempore facere! Voluptatum nobis expedita mollitia itaque maiores sed at veritatis error!</p>
-        </section>
     </div>
 
-    </main>
+    <!--Carousel con mas contenido de la pagina-->
 
+    <h2 class="carouselContenido">Mas contenido:</h2>
+    <div class="carousel">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../img/army-dead.jpg" class="d-block w-100" alt="army of the dead">
+                <div class="carousel-caption">
+                  <p>Zack Snyder + Zombies en Las Vegas</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../img/egoli.jpg" class="d-block w-100" alt="egoli">
+                <div class="carousel-caption">
+                  <p>Egoli, una fiesta con sonidos del Africa</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../img/narcos.png" class="d-block w-100" alt="narcos mexico">
+                <div class="carousel-caption">
+                  <p>Marihuana, cocaina y guerra: Narcos volvio y se translado a Guadalajara</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/selena-serie-300x300.jpg" class="d-block w-100" alt="selena">
+                <div class="carousel-caption">
+                      <p>Selena, la serie de la cantante de Tex-Mex completo su historia tras dos temporadas</p>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+    
+    </main>
+    
     <!--Comienzo del footer al que se le aplico la propiedad flex para que quede como el footer de las otras paginas-->
     <footer class="pie">
         <h3>
@@ -132,10 +208,15 @@
             Podes llenar el siguiente formulario de contacto para poder estar al tanto del mundo de la cultura y no perderte ninguna noticia!
         </p>
         <div class="boton">
-        <a href="../pages/contacto.html"><button>CONTACTO</button></a>
-        <a href="../pages/sobreMi.html"><button id="about">SOBRE NOSOTROS</button></a>
-        </div>
-    </footer> 
+            <a href="../pages/contacto.html"><button type="button" class="btn btn-outline-success">CONTACTO</button></a>
+            <a href="../pages/sobreMi.html"><button type="button" class="btn btn-outline-success">SOBRE NOSOTROS</button></a>
+    
+            </div>
+    </footer>  
+
+    <!--script de bootstrap-->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 </html>

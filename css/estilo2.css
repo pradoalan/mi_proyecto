@@ -60,6 +60,10 @@ main{
     margin: 0px 3px;
 }
 
+.dropdown{
+    visibility: hidden;
+}
+
 /*Empieza el segundo contenedor que contiene el menu con acceso a las otras paginas*/
 .menu{
     background-color: black;
@@ -122,7 +126,7 @@ h1{
     font-size: 45px;
     color:  #949280;
     font-family: 'Orbitron', sans-serif;
-    margin: 40px 20px 40px 20px;
+    margin: 60px 20px 60px 20px;
     text-align: center;
     border-top: 3px solid black;
     border-bottom: 3px solid black;
@@ -246,7 +250,7 @@ a{
                          "area1 area2"
     ;
     column-gap: 150px;
-    row-gap: 80px;
+    row-gap: 40px;
     margin-top: 30px;
     margin-bottom: 70px;
 }
@@ -258,7 +262,7 @@ a{
 }
 
 .portada h2{
-    margin-top: 10px;
+    margin-top: 30px;
     font-family: 'Montserrat', sans-serif;
     font-size: 60px;
     margin-bottom: 10px;
@@ -346,7 +350,7 @@ a{
     width: 300px;
     height: 300px;
     margin: 20px auto 50px;
-    z-index: -1;
+
 }
 
 .carousel p{
@@ -367,28 +371,6 @@ a{
 
 
 /*propiedades de las paginas del footer*/
-.contacto{
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 34px;
-    font-family: 'Oswald', sans-serif;
-    color: black;
-    animation: color 3s infinite
-}
-
-@keyframes color {
-    0%{
-        color: black;
-        font-size: 34px;
-    }
-
-    50%{
-        color: rgb(177, 174, 32);
-        font-size: 36px;
-    }
-
-
-}
 
 input{
     margin: 4px;
@@ -455,9 +437,7 @@ textarea{
 }
 */
 
-.dropdown{
-    visibility: hidden;
-}
+
 
 
 /*Media queries*/
@@ -484,6 +464,38 @@ textarea{
 
     .menu a{
         font-size: 12px;
+    }
+
+    #grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    #grid img{
+        width: 1024px;
+        height: auto;
+    }
+
+    #grid p{
+        margin-top: 0px;
+        margin-bottom: 100px;
+    }
+
+    #texto1{
+        margin-left: 0;
+        text-align: justify;
+    }
+
+    #texto2{
+        margin-right: 0;
+        text-align: justify;
+    }
+
+    #texto3{
+        margin-left: 0;
+        text-align: justify;
     }
 
     /*Contenido de la pagina*/
