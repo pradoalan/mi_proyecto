@@ -1,0 +1,21 @@
+@import "base/reset";
+@import "base/typo";
+@import "utilities/mixins";
+@import "utilities/variables";
+@import "layout/navigation";
+@import "layout/header";
+@import "layout/main";
+@import "layout/grid";
+@import "pages/home";
+@import "pages/article";
+@import "pages/contact";
+@import "pages/about";
+@import "layout/footer";
+@import "components/carousel";
+@import "layout/responsive";
+
+
+body{
+    background-color: $background-principal;
+    width: 100%;
+}

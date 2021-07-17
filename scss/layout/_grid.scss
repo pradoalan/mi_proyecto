@@ -1,0 +1,179 @@
+/*grid de la pagina index*/
+#grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 580px 580px 580px;
+    grid-template-areas: "area1 area2"
+                         "area3 area4"
+                         "area5 area6"
+    ;
+    row-gap: 60px;
+
+    img{
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+#noticia1{
+    grid-area: area1;
+}
+
+#texto1{
+    grid-area: area2;
+    align-self: center;
+    margin-left: 15px;
+
+}
+
+#noticia2{
+    grid-area: area4;
+}
+
+#texto2{
+    grid-area: area3;
+    margin-right: 15px;
+    align-self: center;
+
+}
+
+#noticia3{
+    grid-area: area5;
+}
+
+#texto3{
+    align-self: center;
+    margin-left: 15px;
+    grid-area: area6;
+
+}
+
+/*grid articulos*/
+.grid2{
+    display: grid;
+    grid-template-columns: 64% 23%;
+    grid-template-rows: 900px 600px 1250px;
+    grid-template-areas: "area0 area0"
+                         "area1 area2"
+                         "area1 area2"
+    ;
+    column-gap: 150px;
+    row-gap: 40px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.portada{
+    grid-area: area0;
+}
+
+.noticia{
+    grid-area: area1;
+}
+
+.ads{
+    grid-area: area2;
+}
+
+//Grid para las paginas de navegacion//
+
+/*Pagina Musica*/
+#grid1{
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-template-rows: 290px 290px 290px 290px;
+    grid-template-areas: "foto1 foto1 foto2 foto3"
+                         "foto1 foto1 foto4 foto4"
+                         "foto5 foto6 foto4 foto4"
+                         "foto7 foto7 foto8 foto9"   
+    ;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
+
+    img{
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/*Pagina Cine*/
+#grid2{
+
+    @extend #grid1 ;
+    grid-template-areas: "foto1 foto2 foto3 foto3"
+    "foto6 foto6 foto3 foto3"
+    "foto6 foto6 foto7 foto7"
+    "foto4 foto5 foto8 foto9"
+;
+}
+
+/*Pagina Series*/
+#grid3{
+    @extend #grid1 ;
+    grid-template-areas: "foto1 foto1 foto2 foto3"
+    "foto4 foto5 foto6 foto6"
+    "foto7 foto7 foto6 foto6"
+    "foto7 foto7 foto8 foto9"
+;
+}
+
+
+/*Pagina Literatura*/
+#grid4{
+    @extend #grid1 ;
+    grid-template-areas: "foto1 foto6 foto6 foto4"
+    "foto5 foto5 foto2 foto3"
+    "foto5 foto5 foto7 foto7"
+    "foto8 foto9 foto7 foto7"
+;
+}
+
+/*Pagina Entretenimiento*/
+#grid5{
+    @extend #grid1 ;
+    grid-template-areas: "foto1 foto2 foto3 foto3"
+    "foto4 foto4 foto3 foto3"
+    "foto4 foto4 foto5 foto6"
+    "foto7 foto8 foto9 foto9"
+;
+}
+
+/*pagina lifestyle*/
+#grid6{
+    @extend #grid1 ;
+    grid-template-areas: "foto1 foto2 foto3 foto3"
+    "foto4 foto4 foto5 foto6"
+    "foto4 foto4 foto7 foto7"
+    "foto8 foto9 foto7 foto7"
+;
+
+}
+
+//funcion para posicionamiento de grid//
+
+@for $i from 1 through 9{
+    #mus#{$i}, #cine#{$i}, #series#{$i}, #lit#{$i}, #ent#{$i}, #life#{$i}{
+        grid-area: foto#{$i};
+        position: relative;
+        display: inline-block;
+        text-align: center;
+    }
+}
+
+
+
+.texto{
+    position: absolute;
+    bottom: 0px;
+    color: $color-texto-imagen;
+    background-color: $transparencia-imagen;
+
+    h2{
+        font-family: $tipogradia-terciaria;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,559 @@
+/*Media queries*/
+
+@media only screen and (max-width: 1200px){
+    
+    main{
+        margin: 0px;
+    }
+
+    .grid2{
+
+        h2{
+        margin: 10px 5px;
+    }
+
+        p{
+        margin: 0px 5px;
+    }
+    
+    } 
+    
+/*Pagina Musica*/
+#grid1{
+    display: grid;
+    grid-template-columns: 30% 30%;
+    grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
+    grid-template-areas: "foto1 foto1"
+                         "foto1 foto1"
+                         "foto2 foto3"
+                         "foto7 foto7"
+                         "foto5 foto6"   
+                         "foto4 foto4"
+                         "foto4 foto4"
+                         "foto8 foto9"
+    ;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
+}
+    #grid2{
+        grid-template-areas: "foto1 foto2"
+                             "foto3 foto3"
+                             "foto3 foto3"
+                             "foto7 foto7"
+                             "foto4 foto5"
+                             "foto6 foto6"
+                             "foto6 foto6"
+                             "foto8 foto9"
+        ;
+    }
+
+        /*Pagina Entretenimiento*/
+        #grid5{
+            grid-template-areas: "foto3 foto3"
+                                 "foto3 foto3"
+                                 "foto1 foto2"
+                                 "foto9 foto9"
+                                 "foto5 foto6"
+                                 "foto4 foto4"
+                                 "foto4 foto4"
+                                 "foto7 foto8"
+            ;
+        }
+
+        /*pagina lifestyle*/
+        #grid6{
+            grid-template-areas: "foto1 foto2"
+                                 "foto4 foto4"
+                                 "foto4 foto4"
+                                 "foto8 foto9"
+                                 "foto7 foto7"
+                                 "foto7 foto7"
+                                 "foto3 foto3"
+                                 "foto5 foto6"
+            ;
+}
+
+/*Pagina Literatura*/
+#grid4{
+    grid-template-areas: "foto6 foto6"
+                         "foto1 foto4"
+                         "foto5 foto5"
+                         "foto5 foto5"
+                         "foto2 foto3"
+                         "foto7 foto7"
+                         "foto7 foto7"
+                         "foto8 foto9"
+    ;
+}
+
+
+
+/*Pagina Series*/
+#grid3{
+    grid-template-areas: "foto1 foto1"
+                         "foto2 foto3"
+                         "foto6 foto6"
+                         "foto6 foto6"
+                         "foto4 foto5"
+                         "foto7 foto7"
+                         "foto7 foto7"
+                         "foto8 foto9"
+    ;
+}
+        
+
+}
+
+@media only screen and (max-width:992px){
+
+        /*Barra de navegacion*/
+
+        .menu a{
+            font-size: 12px;
+        }
+
+        //grid index//
+    
+        #grid{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            img{
+                width: 1024px;
+                height: auto;
+            }
+        
+            p{
+                margin-top: 0px;
+                margin-bottom: 100px;
+            }
+        }
+    
+        @for $i from 1 through 3 {
+            #texto#{$i}{
+                margin-left: 0;
+                text-align: justify;
+            }
+        }
+    
+        /*grid articulos*/
+    
+        .grid2{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 800px 2000px 400px;
+            grid-template-areas: "area0"
+                                 "area1"
+                                 "area2"
+            ;
+            row-gap: 0px;
+            margin-top: 30px;
+            margin-bottom: 0px;
+
+            p{
+                margin: 0px 5px;
+            }
+        }
+   
+        .ads{
+            align-self: center;
+            justify-self: center;
+
+            p{
+                margin: auto;
+            }
+        
+            img{
+                width: 250px;
+        
+            }
+        }
+    
+        .publicidad{
+            position: static;
+            display: flex;
+        }
+
+/*Pagina Musica*/
+#grid1{
+    display: grid;
+    grid-template-columns: 35% 35%;
+    grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
+    grid-template-areas: "foto1 foto1"
+                         "foto1 foto1"
+                         "foto2 foto3"
+                         "foto7 foto7"
+                         "foto5 foto6"   
+                         "foto4 foto4"
+                         "foto4 foto4"
+                         "foto8 foto9"
+    ;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
+}
+    //pagina cine//    
+
+    #grid2{
+        grid-template-areas: "foto1 foto2"
+                             "foto3 foto3"
+                             "foto3 foto3"
+                             "foto7 foto7"
+                             "foto4 foto5"
+                             "foto6 foto6"
+                             "foto6 foto6"
+                             "foto8 foto9"
+        ;
+    }
+
+    /*Pagina Entretenimiento*/
+    #grid5{
+        grid-template-areas: "foto3 foto3"
+                         "foto3 foto3"
+                         "foto1 foto2"
+                         "foto9 foto9"
+                         "foto5 foto6"
+                         "foto4 foto4"
+                         "foto4 foto4"
+                         "foto7 foto8"
+        ;
+}
+
+    /*pagina lifestyle*/
+    #grid6{
+        grid-template-areas: "foto1 foto2"
+                             "foto4 foto4"
+                             "foto4 foto4"
+                             "foto8 foto9"
+                             "foto7 foto7"
+                             "foto7 foto7"
+                             "foto3 foto3"
+                             "foto5 foto6"
+}
+
+/*Pagina Literatura*/
+#grid4{
+    grid-template-areas: "foto6 foto6"
+                         "foto1 foto4"
+                         "foto5 foto5"
+                         "foto5 foto5"
+                         "foto2 foto3"
+                         "foto7 foto7"
+                         "foto7 foto7"
+                         "foto8 foto9"
+    ;
+}
+
+
+
+/*Pagina Series*/
+#grid3{
+    grid-template-areas: "foto1 foto1"
+                         "foto2 foto3"
+                         "foto6 foto6"
+                         "foto6 foto6"
+                         "foto4 foto5"
+                         "foto7 foto7"
+                         "foto7 foto7"
+                         "foto8 foto9"
+    ;
+}
+
+}
+
+@media only screen and (max-width:768px){
+
+        /*Atributos primer contenedor para logo y redes*/
+
+        .redes{
+            background: linear-gradient(to top, $background-secundario 50%, $color-terciario );
+        }
+    
+        .logo{
+    
+            margin: auto;
+            font-size: 20px;
+    
+        }
+    
+        .logoRedes{
+            display: none;
+        }
+    
+        /*Atributos del contenedor menu*/
+    
+        .logoMenu{
+            margin-left: 5px;
+        }
+    
+        .navegacion{
+            display: none;
+        }
+        
+        .dropdown{
+            visibility: visible;
+            justify-self: right;       
+            margin-right: 10px;
+            font-family: $tipografia-secundaria;
+            
+        }
+    
+        #dropdownMenuButton1{
+            width: 190px;
+            color:  $color-principal;
+        }
+    
+        .dropdown-menu{
+            text-align: center;
+            font-family: $tipografia-principal;
+            min-width: 190px;
+        }
+    
+        .menu ul li a {
+            font-size: 15px;
+            padding: 8px 0px;
+        }
+    
+        .menu ul li a img{
+            width: 30px;
+        }
+
+        /*contenido principal pagina*/
+
+    h1{
+        font-size: 40px;
+        text-align: center;
+        color: $color-secundario;
+    }
+
+    //grid articulos//
+
+    .grid2{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 750px 1900px 400px;
+        grid-template-areas: "area0"
+                             "area1"
+                             "area2"
+        ;
+        row-gap: 0px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+
+    /*Pagina Musica*/
+#grid1{
+    display: grid;
+    grid-template-columns: 47% 47%;
+    grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
+    grid-template-areas: "foto1 foto1"
+                         "foto1 foto1"
+                         "foto2 foto3"
+                         "foto7 foto7"
+                         "foto5 foto6"   
+                         "foto4 foto4"
+                         "foto4 foto4"
+                         "foto8 foto9"
+    ;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
+}    
+
+    //pagina cine//
+
+    #grid2{
+        grid-template-areas: "foto1 foto2"
+                             "foto3 foto3"
+                             "foto3 foto3"
+                             "foto7 foto7"
+                             "foto4 foto5"
+                             "foto6 foto6"
+                             "foto6 foto6"
+                             "foto8 foto9"
+        ;
+    }
+
+    /*Pagina Entretenimiento*/
+    #grid5{
+        grid-template-areas: "foto3 foto3"
+                             "foto3 foto3"
+                             "foto1 foto2"                                 
+                             "foto9 foto9"
+                             "foto5 foto6"
+                             "foto4 foto4"
+                             "foto4 foto4"                                 
+                             "foto7 foto8"
+        ;
+    }
+
+    /*pagina lifestyle*/
+    #grid6{
+        grid-template-areas: "foto1 foto2"
+                             "foto4 foto4"
+                             "foto4 foto4"
+                             "foto8 foto9"
+                             "foto7 foto7"
+                             "foto7 foto7"
+                             "foto3 foto3"
+                             "foto5 foto6"
+        ;
+}
+
+/*Pagina Literatura*/
+#grid4{
+    grid-template-areas: "foto6 foto6"
+                         "foto1 foto4"
+                         "foto5 foto5"
+                         "foto5 foto5"
+                         "foto2 foto3"
+                         "foto7 foto7"
+                         "foto7 foto7"
+                         "foto8 foto9"
+    ;
+}
+
+/*Pagina Series*/
+#grid3{
+    grid-template-areas: "foto1 foto1"
+                         "foto2 foto3"
+                         "foto6 foto6"
+                         "foto6 foto6"
+                         "foto4 foto5"
+                         "foto7 foto7"
+                         "foto7 foto7"
+                         "foto8 foto9"
+    ;
+}
+
+form{
+    text-align: center;
+    color:  $color-principal;
+}
+
+    
+    /*Contenido del footer*/
+
+    .pie{
+        height: 400px;
+    }
+
+}
+
+@media only screen and (max-width: 576px){
+
+    //grid articulos//
+
+    .grid2{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 650px 2100px 350px;
+        grid-template-areas: "area0"
+                             "area1"
+                             "area2"
+        ;
+        row-gap: 0px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+
+    .publicidad{
+        display: block;
+        margin: 50px 0px;
+    }
+
+    .ads img{
+        width: 130px;
+    }
+
+    /*Pagina Musica*/
+#grid1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px;
+    grid-template-areas: "foto1 foto1"
+                         "foto1 foto1"
+                         "foto2 foto3"
+                         "foto7 foto7"
+                         "foto5 foto6"   
+                         "foto4 foto4"
+                         "foto4 foto4"
+                         "foto8 foto9"
+    ;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
+}
+
+    //pagina cine//
+
+    #grid2{
+        grid-template-areas: "foto1 foto2"
+                             "foto3 foto3"
+                             "foto3 foto3"
+                             "foto7 foto7"
+                             "foto4 foto5"
+                             "foto6 foto6"
+                             "foto6 foto6"
+                             "foto8 foto9"
+        ;
+    }
+
+    /*Pagina Entretenimiento*/
+    #grid5{
+        grid-template-areas: "foto3 foto3"
+                             "foto3 foto3"
+                             "foto1 foto2"
+                             "foto9 foto9"
+                             "foto5 foto6"
+                             "foto4 foto4"
+                             "foto4 foto4"
+                             "foto7 foto8"
+        ;
+    }
+    
+    /*pagina lifestyle*/
+    #grid6{
+        grid-template-areas: "foto1 foto2"
+                             "foto4 foto4"
+                             "foto4 foto4"
+                             "foto8 foto9"
+                             "foto7 foto7"
+                             "foto7 foto7"
+                             "foto3 foto3"
+                             "foto5 foto6"
+        ;
+}    
+
+/*Pagina Literatura*/
+#grid4{
+    grid-template-areas: "foto6 foto6"
+                         "foto1 foto4"
+                         "foto5 foto5"
+                         "foto5 foto5"
+                         "foto2 foto3"
+                         "foto7 foto7"
+                         "foto7 foto7"
+                         "foto8 foto9"
+    ;
+}
+
+/*Pagina Series*/
+#grid3{
+    grid-template-areas: "foto1 foto1"
+                         "foto2 foto3"
+                         "foto6 foto6"
+                         "foto6 foto6"
+                         "foto4 foto5"
+                         "foto7 foto7"
+                         "foto7 foto7"
+                         "foto8 foto9"
+    ;
+}
+
+}
+
+

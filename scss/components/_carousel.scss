@@ -1,0 +1,32 @@
+/*Carousel con mas contenido del sitio*/
+
+.carouselContenido{
+    font-family: $tipografia-principal;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px 0px;
+    color: $color-secundario;
+}
+
+.carousel{
+    width: 300px;
+    height: 300px;
+    margin: 20px auto 50px;
+
+    p{
+        position: absolute;
+        bottom: 0px;
+        color: $color-texto-imagen;
+        background-color: $transparencia-imagen;
+        font-family: 'Pontano Sans', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+}
+
+.carousel-caption {
+    max-width: 100%;
+    width:100%;
+    left: 0;
+}

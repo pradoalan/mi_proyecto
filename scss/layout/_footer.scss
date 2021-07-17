@@ -1,0 +1,32 @@
+
+/*Propiedades del footer aplicando flex*/
+
+.pie{
+    color:  $color-terciario;
+    background-color: $background-secundario;
+    display: flex;
+    height: 200px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+
+    h3{
+        margin: 0;
+        font-size: 30px;
+        font-family: $tipografia-secundaria;
+        text-align: center;
+    }
+    
+    p{
+        margin-top: 5px;
+        font-size: 15px;
+        font-family: $tipografia-principal;
+        text-align: center;
+    }
+}
+
+.btn{
+    font-family: $tipografia-secundaria;
+}

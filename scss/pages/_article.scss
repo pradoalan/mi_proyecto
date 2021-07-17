@@ -1,0 +1,63 @@
+
+/*Portada*/
+
+.portada{
+    h2{
+        @include portada(30px, 60px, 10px, $color-secundario)
+    }
+
+    h3{
+        @include portada(0px, 20px, 10px, $color-principal)
+    }
+
+    p{
+        @include portada(0px, 13px, 0px, $color-principal)
+    }
+
+    p span{
+        color: $color-terciario;
+    }
+
+
+}
+
+
+/*Noticia principal*/
+
+.noticia{
+
+    h2{
+        font-family: $tipografia-principal;
+        font-size: 50px;
+        text-align: left;
+        margin: 10px 0px;
+        color: $color-secundario;
+    }
+    
+    p{
+        font-family: $tipografia-principal;
+        font-size: 16px;
+        color:  $color-principal;
+    }
+
+    img{
+        max-width: 100%;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    
+    }    
+}
+
+/*Aside publicitario*/
+
+.publicidad{
+    position: sticky;
+    top: 85px;
+}
+
+.ads img{
+    max-width: 100%;
+    width: 100%;
+    
+}

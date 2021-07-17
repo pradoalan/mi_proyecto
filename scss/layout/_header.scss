@@ -1,0 +1,50 @@
+
+.encabezado{
+    width: 100%;
+    display: inline;
+}
+
+//Contenedor redes//
+
+.redes{
+    height: 45px;
+    display: flex;
+    background: linear-gradient(to right, $background-secundario 60%, $color-terciario );
+    justify-content: right;
+    align-items: center;
+
+    img{
+        width: 27px;
+        display: inline-block;
+        margin: 0 5px;
+        padding-top: 5px;
+        transition: 1s;
+    }
+
+    img:hover{
+        width: 40px;
+        transition: 1s;
+    }
+
+    a{
+        text-decoration: none;
+        color:  $color-principal;
+        font-family: $tipografia-secundaria;
+    }
+}
+
+.logo{
+    margin-right: auto;
+    margin-left: 5px;
+    font-size: 18px;
+
+    p{
+        margin-bottom: 0px;
+    }
+}
+
+.logoRedes img{
+    padding: 0px;
+    margin: 0px 3px;
+}
+

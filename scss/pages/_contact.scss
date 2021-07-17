@@ -1,0 +1,28 @@
+/*propiedades de contacto*/
+
+.contacto{
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 33px;
+    font-family: $tipografia-principal;
+    color:  $color-principal;
+    animation: color 3s infinite
+}
+
+@keyframes color {
+    0%{
+        color:  $color-principal;
+        font-size: 33px;
+    }
+
+    50%{
+        color: $color-animacion;
+        font-size: 35px;
+    }
+
+
+}
+
+form{
+    color:  $color-principal;
+}

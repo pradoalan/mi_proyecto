@@ -1,0 +1,8 @@
+@mixin portada ($margenTop, $tamanioFuente, $margenBottom, $colorTexto){
+    margin-top: $margenTop;
+    font-family: $tipografia-principal;
+    font-size: $tamanioFuente;
+    margin-bottom: $margenBottom;
+    text-align: center;
+    color: $colorTexto;
+}

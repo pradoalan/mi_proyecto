@@ -1,0 +1,20 @@
+h1{
+    font-size: 45px;
+    color:  #949280;
+    font-family: $tipografia-secundaria;
+    margin: 60px 20px 60px 20px;
+    border-top: 3px solid $background-secundario;
+    border-bottom: 3px solid $background-secundario;
+    text-align: right;
+
+}
+
+.animate__fadeInLeft{
+    @extend h1 ;
+    text-decoration: 4px $background-secundario underline;
+    border: none;
+}
+
+a{
+    text-decoration: none;
+}

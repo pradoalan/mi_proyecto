@@ -1,1288 +1,652 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+* {
+  margin: 0;
+  padding: 0; }
 
-body{
-    background-color: #0f0f0f;
-    width: 100%;
-}
+main {
+  margin: 0 75px; }
 
-main{
-    margin: 0 75px;
-}
+.menu {
+  background-color: black;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 65px;
+  margin-bottom: 10px;
+  position: sticky;
+  top: 0px;
+  transition: background-color 2s;
+  z-index: 300; }
 
-.encabezado{
-    width: 100%;
-    display: inline;
-}
+.menu:hover {
+  transition: background-color 2s;
+  background-color: #000000c9; }
 
-/*Empieza el primer contendor redes*/
-.redes{
-    height: 45px;
-    display: flex;
-    background: linear-gradient(to right, black 60%,   #457e53 );
-    justify-content: right;
-    align-items: center;
-}
+.navegacion ul {
+  margin-bottom: 0px; }
 
-.redes img{
+.navegacion li {
+  list-style-type: none;
+  display: inline-block;
+  font-size: 17px;
+  padding: 5px;
+  margin: 0px 5px;
+  transition: 1s; }
+
+.navegacion li:hover {
+  font-size: 22px;
+  transition: 1s; }
+
+.navegacion li a {
+  text-decoration: none;
+  color: #967882;
+  font-family: "Orbitron", sans-serif; }
+
+.navegacion li a:hover {
+  color: rgba(255, 255, 101, 0.637); }
+
+.logoMenu {
+  margin-right: auto;
+  padding: 5px;
+  margin-left: 50px; }
+  .logoMenu img {
+    height: 100px;
+    width: auto; }
+
+.dropdown {
+  visibility: hidden; }
+
+.encabezado {
+  width: 100%;
+  display: inline; }
+
+.redes {
+  height: 45px;
+  display: flex;
+  background: linear-gradient(to right, black 60%, #457e53);
+  justify-content: right;
+  align-items: center; }
+  .redes img {
     width: 27px;
     display: inline-block;
     margin: 0 5px;
     padding-top: 5px;
-    transition: 1s;
-}
-
-.redes img:hover{
+    transition: 1s; }
+  .redes img:hover {
     width: 40px;
-    transition: 1s;
-}
-
-.redes a{
+    transition: 1s; }
+  .redes a {
     text-decoration: none;
-    color:  #949280;
-    font-family: 'Orbitron', sans-serif;
-}
+    color: #949280;
+    font-family: "Orbitron", sans-serif; }
 
-.logo{
-    margin-right: auto;
-    margin-left: 5px;
-    font-size: 18px;
-}
+.logo {
+  margin-right: auto;
+  margin-left: 5px;
+  font-size: 18px; }
+  .logo p {
+    margin-bottom: 0px; }
 
-.logo p{
-    margin-bottom: 0px;
-}
+.logoRedes img {
+  padding: 0px;
+  margin: 0px 3px; }
 
-.logoRedes img{
-    padding: 0px;
-    margin: 0px 3px;
-}
+h1, .animate__fadeInLeft {
+  font-size: 45px;
+  color: #949280;
+  font-family: "Orbitron", sans-serif;
+  margin: 60px 20px 60px 20px;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  text-align: right; }
 
-/*Empieza el segundo contenedor que contiene el menu con acceso a las otras paginas*/
-.menu{
-    background-color: black;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    height: 65px;
-    margin-bottom: 10px;
-    position: sticky;
-    top: 0px;
-    transition: background-color 2s;
-    z-index: 300;
-}
-.menu:hover{
-    transition: background-color 2s;
-    background-color: #000000c9;
-}
+.animate__fadeInLeft {
+  text-decoration: 4px black underline;
+  border: none; }
 
-.navegacion ul{
-    margin-bottom: 0px;
-}
+a {
+  text-decoration: none; }
 
-.navegacion li{
-    list-style-type: none;
-    display: inline-block;
-    font-size: 17px;
-    padding: 5px;
-    margin: 0px 5px;
-    transition: 1s;
-}
-
-.navegacion li:hover{
-    font-size: 22px;
-    transition: 1s;
-}
-
-.navegacion li a{
-    text-decoration: none;
-    color: #967882;
-    font-family: 'Orbitron', sans-serif;
-}
-
-.navegacion li a:hover{
-    color: rgba(255, 255, 101, 0.637);
-}
-
-.logoMenu img{
-    height: 100px;
-    width: auto;    
-}
-.logoMenu{
-    margin-right: auto;
-    padding: 5px;
-    margin-left: 50px;
-}
-
-.dropdown{
-    visibility: hidden;
-}
-
-/*Propiedades del titulo de la pagina*/
-h1{
-    text-align: right;
-    font-size: 45px;
-    color:  #949280;
-    font-family: 'Orbitron', sans-serif;
-    margin: 60px 20px 60px 20px;
-    text-decoration: 4px black underline;
-}
-
-/*Pagina Musica*/
-#grid1{
-    display: grid;
-    grid-template-columns: 24% 24% 24% 24%;
-    grid-template-rows: 290px 290px 290px 290px;
-    grid-template-areas: "foto1 foto1 foto2 foto3"
-                         "foto1 foto1 foto4 foto4"
-                         "foto5 foto6 foto4 foto4"
-                         "foto7 foto7 foto8 foto9"   
-    ;
-    column-gap: 10px;
-    row-gap: 10px;
-    justify-content: center;
-}
-
-#mus1{
-    grid-area: foto1;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#mus2{
-    grid-area: foto2;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-
-}
-
-#mus3{
-    grid-area: foto3;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#mus4{
-    grid-area: foto4;   
-    position: relative;
-    display: inline-block;
-    text-align: center;
-
-}
-
-#mus5{
-    grid-area: foto5;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#mus6{
-    grid-area: foto6;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#mus7{
-    grid-area: foto7;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#mus8{
-    grid-area: foto8;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#mus9{
-    grid-area: foto9;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#grid1 img{
+/*grid de la pagina index*/
+#grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 580px 580px 580px;
+  grid-template-areas: "area1 area2" "area3 area4" "area5 area6";
+  row-gap: 60px; }
+  #grid img {
     max-width: 100%;
     width: 100%;
-    height: 100%;
-}
+    height: 100%; }
+
+#noticia1 {
+  grid-area: area1; }
+
+#texto1 {
+  grid-area: area2;
+  align-self: center;
+  margin-left: 15px; }
+
+#noticia2 {
+  grid-area: area4; }
+
+#texto2 {
+  grid-area: area3;
+  margin-right: 15px;
+  align-self: center; }
+
+#noticia3 {
+  grid-area: area5; }
+
+#texto3 {
+  align-self: center;
+  margin-left: 15px;
+  grid-area: area6; }
+
+/*grid articulos*/
+.grid2 {
+  display: grid;
+  grid-template-columns: 64% 23%;
+  grid-template-rows: 900px 600px 1250px;
+  grid-template-areas: "area0 area0" "area1 area2" "area1 area2";
+  column-gap: 150px;
+  row-gap: 40px;
+  margin-top: 30px;
+  margin-bottom: 70px; }
+
+.portada {
+  grid-area: area0; }
+
+.noticia {
+  grid-area: area1; }
+
+.ads {
+  grid-area: area2; }
+
+/*Pagina Musica*/
+#grid1, #grid2, #grid3, #grid4, #grid5, #grid6 {
+  display: grid;
+  grid-template-columns: 24% 24% 24% 24%;
+  grid-template-rows: 290px 290px 290px 290px;
+  grid-template-areas: "foto1 foto1 foto2 foto3" "foto1 foto1 foto4 foto4" "foto5 foto6 foto4 foto4" "foto7 foto7 foto8 foto9";
+  column-gap: 10px;
+  row-gap: 10px;
+  justify-content: center; }
+  #grid1 img, #grid2 img, #grid3 img, #grid4 img, #grid5 img, #grid6 img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%; }
 
 /*Pagina Cine*/
-#grid2{
-    display: grid;
-    grid-template-columns: 24% 24% 24% 24%;
-    grid-template-rows: 290px 290px 290px 290px;
-    grid-template-areas: "foto1 foto2 foto3 foto3"
-                         "foto6 foto6 foto3 foto3"
-                         "foto6 foto6 foto7 foto7"
-                         "foto4 foto5 foto8 foto9"
-    ;
-    column-gap: 10px;
-    row-gap: 10px;
-    justify-content: center;
-}
-
-#cine1{
-    grid-area: foto1;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#cine2{
-    grid-area: foto2;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#cine3{
-    grid-area: foto3;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#cine4{
-    grid-area: foto4;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#cine5{
-    grid-area: foto5;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#cine6{
-    grid-area: foto6;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#cine7{
-    grid-area: foto7;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#cine8{
-    grid-area: foto8;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#cine9{
-    grid-area: foto9;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#grid2 img{
-    max-width: 100%;
-    width: 100%;
-    height: 100%;
-}
+#grid2 {
+  grid-template-areas: "foto1 foto2 foto3 foto3" "foto6 foto6 foto3 foto3" "foto6 foto6 foto7 foto7" "foto4 foto5 foto8 foto9"; }
 
 /*Pagina Series*/
-#grid3{
-    display: grid;
-    grid-template-columns: 24% 24% 24% 24%;
-    grid-template-rows: 290px 290px 290px 290px;
-    grid-template-areas: "foto1 foto1 foto2 foto3"
-                         "foto4 foto5 foto6 foto6"
-                         "foto7 foto7 foto6 foto6"
-                         "foto7 foto7 foto8 foto9"
-    ;
-    column-gap: 10px;
-    row-gap: 10px;
-    justify-content: center;
-}
-
-#series1{
-    grid-area: foto1;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#series2{
-    grid-area: foto2;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#series3{
-    grid-area: foto3;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#series4{
-    grid-area: foto4;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#series5{
-    grid-area: foto5;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#series6{
-    grid-area: foto6;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#series7{
-    grid-area: foto7;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#series8{
-    grid-area: foto8;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#series9{
-    grid-area: foto9;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#grid3 img{
-    max-width: 100%;
-    width: 100%;
-    height: 100%;
-}
+#grid3 {
+  grid-template-areas: "foto1 foto1 foto2 foto3" "foto4 foto5 foto6 foto6" "foto7 foto7 foto6 foto6" "foto7 foto7 foto8 foto9"; }
 
 /*Pagina Literatura*/
-#grid4{
-    display: grid;
-    grid-template-columns: 24% 24% 24% 24%;
-    grid-template-rows: 290px 290px 290px 290px;
-    grid-template-areas: "foto1 foto6 foto6 foto4"
-                         "foto5 foto5 foto2 foto3"
-                         "foto5 foto5 foto7 foto7"
-                         "foto8 foto9 foto7 foto7"
-    ;
-    column-gap: 10px;
-    row-gap: 10px;
-    justify-content: center;
-}
-
-#lit1{
-    grid-area: foto1;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#lit2{
-    grid-area: foto2;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#lit3{
-    grid-area: foto3;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#lit4{
-    grid-area: foto4;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#lit5{
-    grid-area: foto5;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#lit6{
-    grid-area: foto6;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#lit7{
-    grid-area: foto7;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#lit8{
-    grid-area: foto8;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#lit9{
-    grid-area: foto9;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#grid4 img{
-    max-width: 100%;
-    width: 100%;
-    height: 100%;
-}
+#grid4 {
+  grid-template-areas: "foto1 foto6 foto6 foto4" "foto5 foto5 foto2 foto3" "foto5 foto5 foto7 foto7" "foto8 foto9 foto7 foto7"; }
 
 /*Pagina Entretenimiento*/
-#grid5{
-    display: grid;
-    grid-template-columns: 24% 24% 24% 24%;
-    grid-template-rows: 290px 290px 290px 290px;
-    grid-template-areas: "foto1 foto2 foto3 foto3"
-                         "foto4 foto4 foto3 foto3"
-                         "foto4 foto4 foto5 foto6"
-                         "foto7 foto8 foto9 foto9"
-    ;
-    column-gap: 10px;
-    row-gap: 10px;
-    justify-content: center;
-}
-
-#ent1{
-    grid-area: foto1;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#ent2{
-    grid-area: foto2;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#ent3{
-    grid-area: foto3;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#ent4{
-    grid-area: foto4;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#ent5{
-    grid-area: foto5;
-    position: relative;
-    display: inline-block;
-    text-align: center
-}
-
-#ent6{
-    grid-area: foto6;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#ent7{
-    grid-area: foto7;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#ent8{
-    grid-area: foto8;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#ent9{
-    grid-area: foto9;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-#grid5 img{
-    max-width: 100%;
-    width: 100%;
-    height: 100%;
-}
+#grid5 {
+  grid-template-areas: "foto1 foto2 foto3 foto3" "foto4 foto4 foto3 foto3" "foto4 foto4 foto5 foto6" "foto7 foto8 foto9 foto9"; }
 
 /*pagina lifestyle*/
-#grid6{
-    display: grid;
-    grid-template-columns: 24% 24% 24% 24%;
-    grid-template-rows: 290px 290px 290px 290px;
-    grid-template-areas: "foto1 foto2 foto3 foto3"
-                         "foto4 foto4 foto5 foto6"
-                         "foto4 foto4 foto7 foto7"
-                         "foto8 foto9 foto7 foto7"
-    ;
-    column-gap: 10px;
-    row-gap: 10px;
-    justify-content: center;
-}
+#grid6 {
+  grid-template-areas: "foto1 foto2 foto3 foto3" "foto4 foto4 foto5 foto6" "foto4 foto4 foto7 foto7" "foto8 foto9 foto7 foto7"; }
 
-#life1{
-    grid-area: foto1;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
+#mus1, #cine1, #series1, #lit1, #ent1, #life1 {
+  grid-area: foto1;
+  position: relative;
+  display: inline-block;
+  text-align: center; }
 
-#life2{
-    grid-area: foto2;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
+#mus2, #cine2, #series2, #lit2, #ent2, #life2 {
+  grid-area: foto2;
+  position: relative;
+  display: inline-block;
+  text-align: center; }
 
-#life3{
-    grid-area: foto3;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
+#mus3, #cine3, #series3, #lit3, #ent3, #life3 {
+  grid-area: foto3;
+  position: relative;
+  display: inline-block;
+  text-align: center; }
 
-#life4{
-    grid-area: foto4;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
+#mus4, #cine4, #series4, #lit4, #ent4, #life4 {
+  grid-area: foto4;
+  position: relative;
+  display: inline-block;
+  text-align: center; }
 
-#life5{
-    grid-area: foto5;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
+#mus5, #cine5, #series5, #lit5, #ent5, #life5 {
+  grid-area: foto5;
+  position: relative;
+  display: inline-block;
+  text-align: center; }
 
-#life6{
-    grid-area: foto6;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
+#mus6, #cine6, #series6, #lit6, #ent6, #life6 {
+  grid-area: foto6;
+  position: relative;
+  display: inline-block;
+  text-align: center; }
 
-#life7{
-    grid-area: foto7;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
+#mus7, #cine7, #series7, #lit7, #ent7, #life7 {
+  grid-area: foto7;
+  position: relative;
+  display: inline-block;
+  text-align: center; }
 
-#life8{
-    grid-area: foto8;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
+#mus8, #cine8, #series8, #lit8, #ent8, #life8 {
+  grid-area: foto8;
+  position: relative;
+  display: inline-block;
+  text-align: center; }
 
-#life9{
-    grid-area: foto9;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
+#mus9, #cine9, #series9, #lit9, #ent9, #life9 {
+  grid-area: foto9;
+  position: relative;
+  display: inline-block;
+  text-align: center; }
 
-#grid6 img{
-    max-width: 100%;
-    width: 100%;
-    height: 100%;
-}
-
-.texto{
-    position: absolute;
-    bottom: 0px;
-    color: rgb(228, 228, 228);
-    background-color: rgba(17, 17, 17, 0.445);              /*MOVER ABAJO, TEXTO PARA TODAS LAS PAGINAS*/
-}
-
-.texto h2{
-    font-family: 'Pontano Sans', sans-serif;
+.texto {
+  position: absolute;
+  bottom: 0px;
+  color: #e4e4e4;
+  background-color: rgba(17, 17, 17, 0.445); }
+  .texto h2 {
+    font-family: "Pontano Sans", sans-serif;
     font-size: 20px;
-    font-weight: bold;
-}
+    font-weight: bold; }
 
-/*propiedades de contacto y sobreMi*/
+#texto1 h2 {
+  color: #967882;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  text-align: justify;
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px; }
 
-.contacto{
-    text-align: center;
-    margin-bottom: 100px;
-    font-size: 33px;
-    font-family: 'Montserrat', sans-serif;
-    color:  #949280;
-    animation: color 3s infinite
-}
+#texto1 p {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 40px;
+  color: #949280; }
+
+#texto2 h2 {
+  color: #967882;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  text-align: justify;
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px; }
+
+#texto2 p {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 40px;
+  color: #949280; }
+
+#texto3 h2 {
+  color: #967882;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  text-align: justify;
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px; }
+
+#texto3 p {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 40px;
+  color: #949280; }
+
+/*Portada*/
+.portada h2 {
+  margin-top: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #967882; }
+
+.portada h3 {
+  margin-top: 0px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #949280; }
+
+.portada p {
+  margin-top: 0px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  margin-bottom: 0px;
+  text-align: center;
+  color: #949280; }
+
+.portada p span {
+  color: #457e53; }
+
+/*Noticia principal*/
+.noticia h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  text-align: left;
+  margin: 10px 0px;
+  color: #967882; }
+
+.noticia p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #949280; }
+
+.noticia img {
+  max-width: 100%;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 0px; }
+
+/*Aside publicitario*/
+.publicidad {
+  position: sticky;
+  top: 85px; }
+
+.ads img {
+  max-width: 100%;
+  width: 100%; }
+
+/*propiedades de contacto*/
+.contacto {
+  text-align: center;
+  margin-bottom: 100px;
+  font-size: 33px;
+  font-family: "Montserrat", sans-serif;
+  color: #949280;
+  animation: color 3s infinite; }
 
 @keyframes color {
-    0%{
-        color:  #949280;
-        font-size: 33px;
-    }
-
-    50%{
-        color: rgb(177, 174, 32);
-        font-size: 35px;
-    }
-
-
-}
-
-form{
-    color:  #949280;
-}
-
-.about{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+  0% {
     color: #949280;
-}
+    font-size: 33px; }
+  50% {
+    color: rgba(255, 255, 101, 0.637);
+    font-size: 35px; } }
+
+form {
+  color: #949280; }
+
+.about {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #949280; }
 
 /*Propiedades del footer aplicando flex*/
-
-.pie{
-    color:  #3f6153;
-    background-color: black;
-    display: flex;
-    height: 200px;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 40px;
-}
-
-.pie h3{
+.pie {
+  color: #457e53;
+  background-color: black;
+  display: flex;
+  height: 200px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px; }
+  .pie h3 {
     margin: 0;
     font-size: 30px;
-    font-family: 'Orbitron', sans-serif;
-    text-align: center;
-}
-
-.pie p{
+    font-family: "Orbitron", sans-serif;
+    text-align: center; }
+  .pie p {
     margin-top: 5px;
     font-size: 15px;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-}
+    font-family: "Montserrat", sans-serif;
+    text-align: center; }
 
-.btn{
-    font-family: 'Orbitron', sans-serif;
-}
-/*
-.pie button{
-    cursor: pointer;  
-    color: rgba(245, 245, 245, 0.808); 
-    background-color:  #3f6153; 
-    border-radius: 80px; 
-    border: none; 
-    font-weight: bold; 
-    font-size: 17px; 
-    letter-spacing: 2px;
-    padding: 10px;
-    margin: 0 3px;
-    font-family: 'Montserrat', sans-serif;
-}
+.btn {
+  font-family: "Orbitron", sans-serif; }
 
-.button{
-    display: flex;
-    margin-top: 15px;
-}
-*/
+/*Carousel con mas contenido del sitio*/
+.carouselContenido {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  margin: 10px 0px;
+  color: #967882; }
+
+.carousel {
+  width: 300px;
+  height: 300px;
+  margin: 20px auto 50px; }
+  .carousel p {
+    position: absolute;
+    bottom: 0px;
+    color: #e4e4e4;
+    background-color: rgba(17, 17, 17, 0.445);
+    font-family: 'Pontano Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold; }
+
+.carousel-caption {
+  max-width: 100%;
+  width: 100%;
+  left: 0; }
 
 /*Media queries*/
-
-@media only screen and (max-width: 1200px){
-    
-
-    #grid2{
-        display: grid;
-        grid-template-columns: 30% 30%;
-        grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
-        grid-template-areas: "foto1 foto2"
-                             "foto3 foto3"
-                             "foto3 foto3"
-                             "foto7 foto7"
-                             "foto4 foto5"
-                             "foto6 foto6"
-                             "foto6 foto6"
-                             "foto8 foto9"
-        ;
-        column-gap: 10px;
-        row-gap: 10px;
-        justify-content: center;
-    }
-
-        /*Pagina Entretenimiento*/
-        #grid5{
-            display: grid;
-            grid-template-columns: 30% 30%;
-            grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
-            grid-template-areas: "foto3 foto3"
-                                 "foto3 foto3"
-                                 "foto1 foto2"
-                                 "foto9 foto9"
-                                 "foto5 foto6"
-                                 "foto4 foto4"
-                                 "foto4 foto4"
-                                 "foto7 foto8"
-            ;
-            column-gap: 10px;
-            row-gap: 10px;
-            justify-content: center;
-        }
-
-        /*pagina lifestyle*/
-        #grid6{
-            display: grid;
-            grid-template-columns: 30% 30%;
-            grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
-            grid-template-areas: "foto1 foto2"
-                                 "foto4 foto4"
-                                 "foto4 foto4"
-                                 "foto8 foto9"
-                                 "foto7 foto7"
-                                 "foto7 foto7"
-                                 "foto3 foto3"
-                                 "foto5 foto6"
-            ;
-            column-gap: 10px;
-            row-gap: 10px;
-            justify-content: center;
-
-            
-}
-
-/*Pagina Literatura*/
-#grid4{
+@media only screen and (max-width: 1200px) {
+  main {
+    margin: 0px; }
+  .grid2 h2 {
+    margin: 10px 5px; }
+  .grid2 p {
+    margin: 0px 5px; }
+  /*Pagina Musica*/
+  #grid1, #grid2, #grid3, #grid4, #grid5, #grid6 {
     display: grid;
     grid-template-columns: 30% 30%;
     grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
-    grid-template-areas: "foto6 foto6"
-                         "foto1 foto4"
-                         "foto5 foto5"
-                         "foto5 foto5"
-                         "foto2 foto3"
-                         "foto7 foto7"
-                         "foto7 foto7"
-                         "foto8 foto9"
-    ;
+    grid-template-areas: "foto1 foto1" "foto1 foto1" "foto2 foto3" "foto7 foto7" "foto5 foto6"    "foto4 foto4" "foto4 foto4" "foto8 foto9";
     column-gap: 10px;
     row-gap: 10px;
-    justify-content: center;
-}
+    justify-content: center; }
+  #grid2 {
+    grid-template-areas: "foto1 foto2" "foto3 foto3" "foto3 foto3" "foto7 foto7" "foto4 foto5" "foto6 foto6" "foto6 foto6" "foto8 foto9"; }
+  /*Pagina Entretenimiento*/
+  #grid5 {
+    grid-template-areas: "foto3 foto3" "foto3 foto3" "foto1 foto2" "foto9 foto9" "foto5 foto6" "foto4 foto4" "foto4 foto4" "foto7 foto8"; }
+  /*pagina lifestyle*/
+  #grid6 {
+    grid-template-areas: "foto1 foto2" "foto4 foto4" "foto4 foto4" "foto8 foto9" "foto7 foto7" "foto7 foto7" "foto3 foto3" "foto5 foto6"; }
+  /*Pagina Literatura*/
+  #grid4 {
+    grid-template-areas: "foto6 foto6" "foto1 foto4" "foto5 foto5" "foto5 foto5" "foto2 foto3" "foto7 foto7" "foto7 foto7" "foto8 foto9"; }
+  /*Pagina Series*/
+  #grid3 {
+    grid-template-areas: "foto1 foto1" "foto2 foto3" "foto6 foto6" "foto6 foto6" "foto4 foto5" "foto7 foto7" "foto7 foto7" "foto8 foto9"; } }
 
-/*Pagina Musica*/
-#grid1{
+@media only screen and (max-width: 992px) {
+  /*Barra de navegacion*/
+  .menu a {
+    font-size: 12px; }
+  #grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; }
+    #grid img {
+      width: 1024px;
+      height: auto; }
+    #grid p {
+      margin-top: 0px;
+      margin-bottom: 100px; }
+  #texto1 {
+    margin-left: 0;
+    text-align: justify; }
+  #texto2 {
+    margin-left: 0;
+    text-align: justify; }
+  #texto3 {
+    margin-left: 0;
+    text-align: justify; }
+  /*grid articulos*/
+  .grid2 {
     display: grid;
-    grid-template-columns: 30% 30%;
-    grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
-    grid-template-areas: "foto1 foto1"
-                         "foto1 foto1"
-                         "foto2 foto3"
-                         "foto7 foto7"
-                         "foto5 foto6"   
-                         "foto4 foto4"
-                         "foto4 foto4"
-                         "foto8 foto9"
-    ;
-    column-gap: 10px;
-    row-gap: 10px;
-    justify-content: center;
-}
-
-/*Pagina Series*/
-#grid3{
-    display: grid;
-    grid-template-columns: 30% 30%;
-    grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
-    grid-template-areas: "foto1 foto1"
-                         "foto2 foto3"
-                         "foto6 foto6"
-                         "foto6 foto6"
-                         "foto4 foto5"
-                         "foto7 foto7"
-                         "foto7 foto7"
-                         "foto8 foto9"
-    ;
-    column-gap: 10px;
-    row-gap: 10px;
-    justify-content: center;
-}
-        
-
-}
-
-@media only screen and (max-width:992px){
-
-    .menu a{
-        font-size: 12px;
-    }
-
-    #grid2{
-        display: grid;
-        grid-template-columns: 35% 35%;
-        grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
-        grid-template-areas: "foto1 foto2"
-                             "foto3 foto3"
-                             "foto3 foto3"
-                             "foto7 foto7"
-                             "foto4 foto5"
-                             "foto6 foto6"
-                             "foto6 foto6"
-                             "foto8 foto9"
-        ;
-        column-gap: 10px;
-        row-gap: 10px;
-        justify-content: center;
-    }
-
-    /*Pagina Entretenimiento*/
-    #grid5{
-        display: grid;
-        grid-template-columns: 35% 35%;
-        grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
-        grid-template-areas: "foto3 foto3"
-                         "foto3 foto3"
-                         "foto1 foto2"
-                         "foto9 foto9"
-                         "foto5 foto6"
-                         "foto4 foto4"
-                         "foto4 foto4"
-                         "foto7 foto8"
-        ;
-        column-gap: 10px;
-        row-gap: 10px;
-        justify-content: center;
-}
-
-    /*pagina lifestyle*/
-    #grid6{
-        display: grid;
-        grid-template-columns: 35% 35%;
-        grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
-        grid-template-areas: "foto1 foto2"
-                             "foto4 foto4"
-                             "foto4 foto4"
-                             "foto8 foto9"
-                             "foto7 foto7"
-                             "foto7 foto7"
-                             "foto3 foto3"
-                             "foto5 foto6"
-        ;
-        column-gap: 10px;
-        row-gap: 10px;
-        justify-content: center;
-}
-
-/*Pagina Literatura*/
-#grid4{
+    grid-template-columns: 100%;
+    grid-template-rows: 800px 2000px 400px;
+    grid-template-areas: "area0" "area1" "area2";
+    row-gap: 0px;
+    margin-top: 30px;
+    margin-bottom: 0px; }
+    .grid2 p {
+      margin: 0px 5px; }
+  .ads {
+    align-self: center;
+    justify-self: center; }
+    .ads p {
+      margin: auto; }
+    .ads img {
+      width: 250px; }
+  .publicidad {
+    position: static;
+    display: flex; }
+  /*Pagina Musica*/
+  #grid1, #grid2, #grid3, #grid4, #grid5, #grid6 {
     display: grid;
     grid-template-columns: 35% 35%;
     grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
-    grid-template-areas: "foto6 foto6"
-                         "foto1 foto4"
-                         "foto5 foto5"
-                         "foto5 foto5"
-                         "foto2 foto3"
-                         "foto7 foto7"
-                         "foto7 foto7"
-                         "foto8 foto9"
-    ;
+    grid-template-areas: "foto1 foto1" "foto1 foto1" "foto2 foto3" "foto7 foto7" "foto5 foto6"    "foto4 foto4" "foto4 foto4" "foto8 foto9";
     column-gap: 10px;
     row-gap: 10px;
-    justify-content: center;
-}
+    justify-content: center; }
+  #grid2 {
+    grid-template-areas: "foto1 foto2" "foto3 foto3" "foto3 foto3" "foto7 foto7" "foto4 foto5" "foto6 foto6" "foto6 foto6" "foto8 foto9"; }
+  /*Pagina Entretenimiento*/
+  #grid5 {
+    grid-template-areas: "foto3 foto3" "foto3 foto3" "foto1 foto2" "foto9 foto9" "foto5 foto6" "foto4 foto4" "foto4 foto4" "foto7 foto8"; }
+  /*pagina lifestyle*/
+  #grid6 {
+    grid-template-areas: "foto1 foto2" "foto4 foto4" "foto4 foto4" "foto8 foto9" "foto7 foto7" "foto7 foto7" "foto3 foto3" "foto5 foto6"; }
+  /*Pagina Literatura*/
+  #grid4 {
+    grid-template-areas: "foto6 foto6" "foto1 foto4" "foto5 foto5" "foto5 foto5" "foto2 foto3" "foto7 foto7" "foto7 foto7" "foto8 foto9"; }
+  /*Pagina Series*/
+  #grid3 {
+    grid-template-areas: "foto1 foto1" "foto2 foto3" "foto6 foto6" "foto6 foto6" "foto4 foto5" "foto7 foto7" "foto7 foto7" "foto8 foto9"; } }
 
-/*Pagina Musica*/
-#grid1{
-    display: grid;
-    grid-template-columns: 35% 35%;
-    grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
-    grid-template-areas: "foto1 foto1"
-                         "foto1 foto1"
-                         "foto2 foto3"
-                         "foto7 foto7"
-                         "foto5 foto6"   
-                         "foto4 foto4"
-                         "foto4 foto4"
-                         "foto8 foto9"
-    ;
-    column-gap: 10px;
-    row-gap: 10px;
-    justify-content: center;
-}
-
-/*Pagina Series*/
-#grid3{
-    display: grid;
-    grid-template-columns: 35% 35%;
-    grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
-    grid-template-areas: "foto1 foto1"
-                         "foto2 foto3"
-                         "foto6 foto6"
-                         "foto6 foto6"
-                         "foto4 foto5"
-                         "foto7 foto7"
-                         "foto7 foto7"
-                         "foto8 foto9"
-    ;
-    column-gap: 10px;
-    row-gap: 10px;
-    justify-content: center;
-}
-
-}
-
-@media only screen and (max-width:768px){
-
-        /*Atributos primer contenedor para logo y redes*/
-
-        .redes{
-            background: linear-gradient(to top, black 50%,   #457e53 );
-        }
-    
-        .logo{
-    
-            margin: auto;
-            font-size: 20px;
-    
-        }
-    
-        .logoRedes{
-            display: none;
-        }
-    
-        /*Atributos del contenedor menu*/
-    
-        .logoMenu{
-            margin-left: 5px;
-        }
-    
-        .navegacion{
-            display: none;
-        }
-        
-        .dropdown{
-            visibility: visible;
-            justify-self: right;       
-            margin-right: 10px;
-            font-family: 'Orbitron', sans-serif;
-            
-        }
-    
-        #dropdownMenuButton1{
-            width: 190px;
-            color:  #949280;
-        }
-    
-        .dropdown-menu{
-            text-align: center;
-            font-family: 'Montserrat', sans-serif;
-            min-width: 190px;
-        }
-    
-        .menu ul li a {
-            font-size: 15px;
-            padding: 8px 0px;
-        }
-    
-        .menu ul li a img{
-            width: 30px;
-        }
-
-        /*contenido principal pagina*/
-
-    h1{
-        font-size: 40px;
-        text-align: center;
-        color: #967882;
-    }
-
-    #grid2{
-        display: grid;
-        grid-template-columns: 47% 47%;
-        grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
-        grid-template-areas: "foto1 foto2"
-                             "foto3 foto3"
-                             "foto3 foto3"
-                             "foto7 foto7"
-                             "foto4 foto5"
-                             "foto6 foto6"
-                             "foto6 foto6"
-                             "foto8 foto9"
-        ;
-        column-gap: 10px;
-        row-gap: 10px;
-        justify-content: center;
-    }
-
-    /*Pagina Entretenimiento*/
-    #grid5{
-        display: grid;
-        grid-template-columns: 47% 47%;
-        grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
-        grid-template-areas: "foto3 foto3"
-                             "foto3 foto3"
-                             "foto1 foto2"                                 "foto9 foto9"
-                             "foto5 foto6"
-                             "foto4 foto4"
-                             "foto4 foto4"                                 "foto7 foto8"
-        ;
-        column-gap: 10px;
-        row-gap: 10px;
-        justify-content: center;
-    }
-
-    /*pagina lifestyle*/
-    #grid6{
-        display: grid;
-        grid-template-columns: 47% 47%;
-        grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
-        grid-template-areas: "foto1 foto2"
-                             "foto4 foto4"
-                             "foto4 foto4"
-                             "foto8 foto9"
-                             "foto7 foto7"
-                             "foto7 foto7"
-                             "foto3 foto3"
-                             "foto5 foto6"
-        ;
-        column-gap: 10px;
-        row-gap: 10px;
-        justify-content: center;
-}
-
-/*Pagina Literatura*/
-#grid4{
-    display: grid;
-    grid-template-columns: 47% 47%;
-    grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
-    grid-template-areas: "foto6 foto6"
-                         "foto1 foto4"
-                         "foto5 foto5"
-                         "foto5 foto5"
-                         "foto2 foto3"
-                         "foto7 foto7"
-                         "foto7 foto7"
-                         "foto8 foto9"
-    ;
-    column-gap: 10px;
-    row-gap: 10px;
-    justify-content: center;
-}
-
-/*Pagina Musica*/
-#grid1{
-    display: grid;
-    grid-template-columns: 47% 47%;
-    grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
-    grid-template-areas: "foto1 foto1"
-                         "foto1 foto1"
-                         "foto2 foto3"
-                         "foto7 foto7"
-                         "foto5 foto6"   
-                         "foto4 foto4"
-                         "foto4 foto4"
-                         "foto8 foto9"
-    ;
-    column-gap: 10px;
-    row-gap: 10px;
-    justify-content: center;
-}
-
-/*Pagina Series*/
-#grid3{
-    display: grid;
-    grid-template-columns: 47% 47%;
-    grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
-    grid-template-areas: "foto1 foto1"
-                         "foto2 foto3"
-                         "foto6 foto6"
-                         "foto6 foto6"
-                         "foto4 foto5"
-                         "foto7 foto7"
-                         "foto7 foto7"
-                         "foto8 foto9"
-    ;
-    column-gap: 10px;
-    row-gap: 10px;
-    justify-content: center;
-}
-
-form{
+@media only screen and (max-width: 768px) {
+  /*Atributos primer contenedor para logo y redes*/
+  .redes {
+    background: linear-gradient(to top, black 50%, #457e53); }
+  .logo {
+    margin: auto;
+    font-size: 20px; }
+  .logoRedes {
+    display: none; }
+  /*Atributos del contenedor menu*/
+  .logoMenu {
+    margin-left: 5px; }
+  .navegacion {
+    display: none; }
+  .dropdown {
+    visibility: visible;
+    justify-self: right;
+    margin-right: 10px;
+    font-family: "Orbitron", sans-serif; }
+  #dropdownMenuButton1 {
+    width: 190px;
+    color: #949280; }
+  .dropdown-menu {
     text-align: center;
-    color:  #949280;
-}
+    font-family: "Montserrat", sans-serif;
+    min-width: 190px; }
+  .menu ul li a {
+    font-size: 15px;
+    padding: 8px 0px; }
+  .menu ul li a img {
+    width: 30px; }
+  /*contenido principal pagina*/
+  h1, .animate__fadeInLeft {
+    font-size: 40px;
+    text-align: center;
+    color: #967882; }
+  .grid2 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 750px 1900px 400px;
+    grid-template-areas: "area0" "area1" "area2";
+    row-gap: 0px;
+    margin-top: 30px;
+    margin-bottom: 0px; }
+  /*Pagina Musica*/
+  #grid1, #grid2, #grid3, #grid4, #grid5, #grid6 {
+    display: grid;
+    grid-template-columns: 47% 47%;
+    grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
+    grid-template-areas: "foto1 foto1" "foto1 foto1" "foto2 foto3" "foto7 foto7" "foto5 foto6"    "foto4 foto4" "foto4 foto4" "foto8 foto9";
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center; }
+  #grid2 {
+    grid-template-areas: "foto1 foto2" "foto3 foto3" "foto3 foto3" "foto7 foto7" "foto4 foto5" "foto6 foto6" "foto6 foto6" "foto8 foto9"; }
+  /*Pagina Entretenimiento*/
+  #grid5 {
+    grid-template-areas: "foto3 foto3" "foto3 foto3" "foto1 foto2"                                  "foto9 foto9" "foto5 foto6" "foto4 foto4" "foto4 foto4"                                  "foto7 foto8"; }
+  /*pagina lifestyle*/
+  #grid6 {
+    grid-template-areas: "foto1 foto2" "foto4 foto4" "foto4 foto4" "foto8 foto9" "foto7 foto7" "foto7 foto7" "foto3 foto3" "foto5 foto6"; }
+  /*Pagina Literatura*/
+  #grid4 {
+    grid-template-areas: "foto6 foto6" "foto1 foto4" "foto5 foto5" "foto5 foto5" "foto2 foto3" "foto7 foto7" "foto7 foto7" "foto8 foto9"; }
+  /*Pagina Series*/
+  #grid3 {
+    grid-template-areas: "foto1 foto1" "foto2 foto3" "foto6 foto6" "foto6 foto6" "foto4 foto5" "foto7 foto7" "foto7 foto7" "foto8 foto9"; }
+  form {
+    text-align: center;
+    color: #949280; }
+  /*Contenido del footer*/
+  .pie {
+    height: 400px; } }
 
-    
-    /*Contenido del footer*/
-
-    .pie{
-        height: 400px;
-    }
-
-}
-
-@media only screen and (max-width: 576px){
-
-    #grid2{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px;
-        grid-template-areas: "foto1 foto2"
-                             "foto3 foto3"
-                             "foto3 foto3"
-                             "foto7 foto7"
-                             "foto4 foto5"
-                             "foto6 foto6"
-                             "foto6 foto6"
-                             "foto8 foto9"
-        ;
-        column-gap: 10px;
-        row-gap: 10px;
-        justify-content: center;
-    }
-
-    /*Pagina Entretenimiento*/
-    #grid5{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px;
-        grid-template-areas: "foto3 foto3"
-                             "foto3 foto3"
-                             "foto1 foto2"
-                             "foto9 foto9"
-                             "foto5 foto6"
-                             "foto4 foto4"
-                             "foto4 foto4"
-                             "foto7 foto8"
-        ;
-        column-gap: 10px;
-        row-gap: 10px;
-        justify-content: center;
-    }
-    
-    /*pagina lifestyle*/
-    #grid6{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px;
-        grid-template-areas: "foto1 foto2"
-                             "foto4 foto4"
-                             "foto4 foto4"
-                             "foto8 foto9"
-                             "foto7 foto7"
-                             "foto7 foto7"
-                             "foto3 foto3"
-                             "foto5 foto6"
-        ;
-        column-gap: 10px;
-        row-gap: 10px;
-        justify-content: center;
-}    
-
-/*Pagina Literatura*/
-#grid4{
+@media only screen and (max-width: 576px) {
+  .grid2 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 650px 2100px 350px;
+    grid-template-areas: "area0" "area1" "area2";
+    row-gap: 0px;
+    margin-top: 30px;
+    margin-bottom: 0px; }
+  .publicidad {
+    display: block;
+    margin: 50px 0px; }
+  .ads img {
+    width: 130px; }
+  /*Pagina Musica*/
+  #grid1, #grid2, #grid3, #grid4, #grid5, #grid6 {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px;
-    grid-template-areas: "foto6 foto6"
-                         "foto1 foto4"
-                         "foto5 foto5"
-                         "foto5 foto5"
-                         "foto2 foto3"
-                         "foto7 foto7"
-                         "foto7 foto7"
-                         "foto8 foto9"
-    ;
+    grid-template-areas: "foto1 foto1" "foto1 foto1" "foto2 foto3" "foto7 foto7" "foto5 foto6"    "foto4 foto4" "foto4 foto4" "foto8 foto9";
     column-gap: 10px;
     row-gap: 10px;
-    justify-content: center;
-}
+    justify-content: center; }
+  #grid2 {
+    grid-template-areas: "foto1 foto2" "foto3 foto3" "foto3 foto3" "foto7 foto7" "foto4 foto5" "foto6 foto6" "foto6 foto6" "foto8 foto9"; }
+  /*Pagina Entretenimiento*/
+  #grid5 {
+    grid-template-areas: "foto3 foto3" "foto3 foto3" "foto1 foto2" "foto9 foto9" "foto5 foto6" "foto4 foto4" "foto4 foto4" "foto7 foto8"; }
+  /*pagina lifestyle*/
+  #grid6 {
+    grid-template-areas: "foto1 foto2" "foto4 foto4" "foto4 foto4" "foto8 foto9" "foto7 foto7" "foto7 foto7" "foto3 foto3" "foto5 foto6"; }
+  /*Pagina Literatura*/
+  #grid4 {
+    grid-template-areas: "foto6 foto6" "foto1 foto4" "foto5 foto5" "foto5 foto5" "foto2 foto3" "foto7 foto7" "foto7 foto7" "foto8 foto9"; }
+  /*Pagina Series*/
+  #grid3 {
+    grid-template-areas: "foto1 foto1" "foto2 foto3" "foto6 foto6" "foto6 foto6" "foto4 foto5" "foto7 foto7" "foto7 foto7" "foto8 foto9"; } }
 
-/*Pagina Musica*/
-#grid1{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px;
-    grid-template-areas: "foto1 foto1"
-                         "foto1 foto1"
-                         "foto2 foto3"
-                         "foto7 foto7"
-                         "foto5 foto6"   
-                         "foto4 foto4"
-                         "foto4 foto4"
-                         "foto8 foto9"
-    ;
-    column-gap: 10px;
-    row-gap: 10px;
-    justify-content: center;
-}
-
-/*Pagina Series*/
-#grid3{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px;
-    grid-template-areas: "foto1 foto1"
-                         "foto2 foto3"
-                         "foto6 foto6"
-                         "foto6 foto6"
-                         "foto4 foto5"
-                         "foto7 foto7"
-                         "foto7 foto7"
-                         "foto8 foto9"
-    ;
-    column-gap: 10px;
-    row-gap: 10px;
-    justify-content: center;
-}
-
-}
+body {
+  background-color: #0f0f0f;
+  width: 100%; }

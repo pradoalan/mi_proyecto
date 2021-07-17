@@ -1,0 +1,26 @@
+//funcion pagina index//
+
+@for $i from 1 through 3 {
+    #texto#{$i}{
+        h2{
+            color: $color-secundario ;
+            border-top: 3px solid $background-secundario;
+            border-bottom: 3px solid $background-secundario;
+            text-align: justify;
+            font-family: $tipografia-principal;
+            font-size: 32px;
+            
+         }
+         
+         p{
+         
+             font-size: 16px;
+             font-family: $tipografia-principal;
+             margin-top: 40px;
+             color:  $color-principal;
+         }
+    }
+}
+
+
+
