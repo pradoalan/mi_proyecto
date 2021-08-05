@@ -2,7 +2,14 @@
 
 @for $i from 1 through 3 {
     #texto#{$i}{
+
         h2{
+            color: $color-principal;
+            font-family: $tipografia-secundaria;
+            font-size: 20px;
+        }
+
+        h3{
             color: $color-secundario ;
             border-top: 3px solid $background-secundario;
             border-bottom: 3px solid $background-secundario;
@@ -16,10 +23,14 @@
          
              font-size: 16px;
              font-family: $tipografia-principal;
-             margin-top: 40px;
+             margin-top: 20px;
              color:  $color-principal;
          }
     }
+}
+
+#texto2 h2{
+    text-align: right;
 }
 
 

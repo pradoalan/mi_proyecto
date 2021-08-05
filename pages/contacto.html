@@ -113,35 +113,56 @@
             Llena el siguiente formulario y enterate de las noticias mas recientes que tenemos para vos!
         </h2>
         
-        <form action="">
-
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre">
-            <br>
-            <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido">
-            <br>
-            <label for="correo">E-mail:</label>
-            <input type="text" id="correo">
-            <br>
-            <label for="clase">Tribu:</label>
-            <select name="" id="clase" class="estiloFormulario">
-                <option value="">Cinefilo</option>
-                <option value="">Bibliofilo</option>
-                <option value="">Binger</option>
-            </select>
-            <br>
-            <label for="edad">Edad:</label>
-            <input type="number" name="" id="edad">
-            <br>
-            Deseas recibir nuestro Newsletter?<input type="checkbox" name="" id="">
-            <br>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Comentarios" class="estiloFormulario"></textarea>
-            <br>
-            <input type="reset" value="Resetear formulario">
-            <input type="submit" value="Enviar formulario">
-    
-        </form>
+        <form>
+            <!-- 2 column grid layout with text inputs for the first and last names -->
+            <div class="row mb-4">
+              <div class="col">
+                <div class="form-outline">
+                  <input type="text" id="form6Example1" class="form-control" />
+                  <label class="form-label" for="form6Example1">Nombre</label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-outline">
+                  <input type="text" id="form6Example2" class="form-control" />
+                  <label class="form-label" for="form6Example2">Apellido</label>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <input type="email" id="form6Example5" class="form-control" />
+              <label class="form-label" for="form6Example3">Email</label>
+            </div>
+          
+            <!-- Number input -->
+            <div class="form-outline mb-4">
+              <input type="number" id="form6Example6" class="form-control" />
+              <label class="form-label" for="form6Example4">Edad</label>
+            </div>
+          
+            <!-- Message input -->
+            <div class="form-outline mb-4">
+              <textarea class="form-control" id="form6Example5" rows="4"></textarea>
+              <label class="form-label" for="form6Example7">Comentarios</label>
+            </div>
+          
+            <!-- Checkbox -->
+            <div class="form-check d-flex justify-content-center mb-4">
+              <input
+                class="form-check-input me-2"
+                type="checkbox"
+                value=""
+                id="form6Example6"
+              />
+              <label class="form-check-label" for="form6Example8"> Desea recibir nuestro Newsletter? </label>
+            </div>
+          
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button type="submit" class="btn btn-secondary" type="button">ENVIAR</button>
+              </div>
+          </form>
     </main>
     
     <!--Comienzo del footer al que se le aplico la propiedad flex para que quede como el footer de las otras paginas-->
