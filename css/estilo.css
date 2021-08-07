@@ -146,7 +146,7 @@ a {
 .grid2 {
   display: grid;
   grid-template-columns: 64% 23%;
-  grid-template-rows: 900px 600px 1250px;
+  grid-template-rows: 900px 600px 1600px;
   grid-template-areas: "area0 area0" "area1 area2" "area1 area2";
   column-gap: 150px;
   row-gap: 40px;
@@ -359,7 +359,8 @@ a {
 .noticia p {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  color: #949280; }
+  color: #949280;
+  line-height: 25px; }
 
 .noticia img {
   max-width: 100%;
@@ -438,17 +439,29 @@ form {
   font-family: "Orbitron", sans-serif; }
 
 /*Carousel con mas contenido del sitio*/
-.carouselContenido {
-  font-family: "Montserrat", sans-serif;
-  font-size: 30px;
+.masContenido {
+  font-family: "Orbitron", sans-serif;
+  font-size: 35px;
   text-align: center;
-  margin: 10px 0px;
+  margin: 100px 0px 40px 0px;
   color: #967882; }
+
+.carouselContenido {
+  font-family: "Orbitron", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px 0px;
+  color: #949280; }
+
+.carousel-inner {
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0);
+  overflow: hidden; }
 
 .carousel {
   width: 300px;
   height: 300px;
-  margin: 20px auto 50px; }
+  margin: 20px auto 80px; }
   .carousel p {
     position: absolute;
     bottom: 0px;
@@ -497,8 +510,25 @@ form {
 
 @media only screen and (max-width: 992px) {
   /*Barra de navegacion*/
+  .header {
+    position: relative; }
   .menu a {
     font-size: 12px; }
+  #texto1 h2 {
+    color: #949280;
+    font-family: "Orbitron", sans-serif;
+    font-size: 30px;
+    text-align: center; }
+  #texto2 h2 {
+    color: #949280;
+    font-family: "Orbitron", sans-serif;
+    font-size: 30px;
+    text-align: center; }
+  #texto3 h2 {
+    color: #949280;
+    font-family: "Orbitron", sans-serif;
+    font-size: 30px;
+    text-align: center; }
   #grid {
     display: flex;
     flex-direction: column;
@@ -523,7 +553,7 @@ form {
   .grid2 {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 800px 2000px 400px;
+    grid-template-rows: 750px 2000px 550px;
     grid-template-areas: "area0" "area1" "area2";
     row-gap: 0px;
     margin-top: 30px;
@@ -531,7 +561,7 @@ form {
     .grid2 p {
       margin: 0px 5px; }
   .ads {
-    align-self: center;
+    align-self: flex-end;
     justify-self: center; }
     .ads p {
       margin: auto; }
@@ -540,6 +570,8 @@ form {
   .publicidad {
     position: static;
     display: flex; }
+  #carousel3 {
+    display: none; }
   /*Pagina Musica*/
   #grid1, #grid2, #grid3, #grid4, #grid5, #grid6 {
     display: grid;
@@ -603,11 +635,13 @@ form {
   .grid2 {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 750px 1900px 400px;
+    grid-template-rows: 750px 1900px 650px;
     grid-template-areas: "area0" "area1" "area2";
     row-gap: 0px;
     margin-top: 30px;
     margin-bottom: 0px; }
+  .noticia h2 {
+    text-align: center; }
   /*Pagina Musica*/
   #grid1, #grid2, #grid3, #grid4, #grid5, #grid6 {
     display: grid;
@@ -636,20 +670,19 @@ form {
     color: #949280; }
   /*Contenido del footer*/
   .pie {
-    height: 400px; } }
+    height: 400px; }
+  #carousel1 {
+    display: none; } }
 
 @media only screen and (max-width: 576px) {
   .grid2 {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 650px 2100px 350px;
+    grid-template-rows: 650px 2100px 700px;
     grid-template-areas: "area0" "area1" "area2";
     row-gap: 0px;
     margin-top: 30px;
     margin-bottom: 0px; }
-  .publicidad {
-    display: block;
-    margin: 50px 0px; }
   .ads img {
     width: 130px; }
   /*Pagina Musica*/
@@ -675,6 +708,26 @@ form {
   /*Pagina Series*/
   #grid3 {
     grid-template-areas: "foto1 foto1" "foto2 foto3" "foto6 foto6" "foto6 foto6" "foto4 foto5" "foto7 foto7" "foto7 foto7" "foto8 foto9"; } }
+
+@media only screen and (max-width: 480px) {
+  .grid2 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 650px 2100px 1000px;
+    grid-template-areas: "area0" "area1" "area2";
+    row-gap: 0px;
+    margin-top: 30px;
+    margin-bottom: 0px; } }
+
+@media only screen and (max-width: 320px) {
+  .grid2 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 650px 2100px 1800px;
+    grid-template-areas: "area0" "area1" "area2";
+    row-gap: 0px;
+    margin-top: 30px;
+    margin-bottom: 0px; } }
 
 body {
   background-color: #0f0f0f;

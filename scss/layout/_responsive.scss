@@ -109,10 +109,29 @@
 
         /*Barra de navegacion*/
 
+        .header{
+            position: relative;
+        }
+
         .menu a{
             font-size: 12px;
         }
 
+        
+@for $i from 1 through 3 {
+    #texto#{$i}{
+
+        h2{
+            color: $color-principal;
+            font-family: $tipografia-secundaria;
+            font-size: 30px;
+            text-align: center;
+            
+        }
+    }
+
+}
+        
         //grid index//
     
         #grid{
@@ -144,7 +163,7 @@
         .grid2{
             display: grid;
             grid-template-columns: 100%;
-            grid-template-rows: 800px 2000px 400px;
+            grid-template-rows: 750px 2000px 550px;
             grid-template-areas: "area0"
                                  "area1"
                                  "area2"
@@ -159,7 +178,7 @@
         }
    
         .ads{
-            align-self: center;
+            align-self: flex-end;
             justify-self: center;
 
             p{
@@ -175,6 +194,10 @@
         .publicidad{
             position: static;
             display: flex;
+        }
+
+        #carousel3{
+            display: none;
         }
 
 /*Pagina Musica*/
@@ -334,7 +357,7 @@
     .grid2{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 750px 1900px 400px;
+        grid-template-rows: 750px 1900px 650px;
         grid-template-areas: "area0"
                              "area1"
                              "area2"
@@ -342,6 +365,10 @@
         row-gap: 0px;
         margin-top: 30px;
         margin-bottom: 0px;
+    }
+
+    .noticia h2{
+        text-align: center;
     }
 
     /*Pagina Musica*/
@@ -441,6 +468,10 @@ form{
         height: 400px;
     }
 
+#carousel1{
+    display: none;
+}
+
 }
 
 @media only screen and (max-width: 576px){
@@ -450,7 +481,7 @@ form{
     .grid2{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 650px 2100px 350px;
+        grid-template-rows: 650px 2100px 700px;
         grid-template-areas: "area0"
                              "area1"
                              "area2"
@@ -460,10 +491,6 @@ form{
         margin-bottom: 0px;
     }
 
-    .publicidad{
-        display: block;
-        margin: 50px 0px;
-    }
 
     .ads img{
         width: 130px;
@@ -554,6 +581,42 @@ form{
     ;
 }
 
+}
+
+@media only screen and (max-width: 480px){
+
+    //grid articulos//
+
+    .grid2{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 650px 2100px 1000px;
+        grid-template-areas: "area0"
+                             "area1"
+                             "area2"
+        ;
+        row-gap: 0px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+
+    //grid articulos//
+
+    .grid2{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 650px 2100px 1800px;
+        grid-template-areas: "area0"
+                             "area1"
+                             "area2"
+        ;
+        row-gap: 0px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
 }
 
 
